@@ -1,0 +1,1229 @@
+[
+  {
+    "query_id": "v3_0955",
+    "head": "Heated, humidified air",
+    "tail": "common cold",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEffect",
+    "n_candidates": 17,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0844",
+    "head": "Exercise interventions and patient beliefs",
+    "tail": "people with hip, knee or hip and knee osteoarthritis: a mixed methods review",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0842",
+    "head": "Aromatase inhibitors (letrozole)",
+    "tail": "subfertile women with polycystic ovary syndrome",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0935",
+    "head": "Selective serotonin reuptake inhibitors (SSRIs) and serotonin-norepinephrine reuptake inhibitors (SNRIs)",
+    "tail": "migraine",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 11,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0843",
+    "head": "Combined use of hyperthermia and radiation therapy",
+    "tail": "treating locally advanced cervix carcinoma",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 13,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0962",
+    "head": "Intravenous secretin",
+    "tail": "autism spectrum disorders (ASD)",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEffect",
+    "n_candidates": 4,
+    "n_reranked": 4
+  },
+  {
+    "query_id": "v3_0968",
+    "head": "Fresh",
+    "tail": "assisted reproduction",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEffect",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0903",
+    "head": "Pregabalin",
+    "tail": "chronic prostatitis",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 12,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0947",
+    "head": "Bronchoscopy-guided antimicrobial therapy",
+    "tail": "cystic fibrosis",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 5,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0932",
+    "head": "Vitamin D",
+    "tail": "asthma",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEffect",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0954",
+    "head": "Magnesium",
+    "tail": "skeletal muscle cramps",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEffect",
+    "n_candidates": 12,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0911",
+    "head": "Chemotherapy",
+    "tail": "brain metastases from small cell lung cancer",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 19,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0897",
+    "head": "Antiplatelet agents and anticoagulants",
+    "tail": "hypertension",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEffect",
+    "n_candidates": 19,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0925",
+    "head": "Erythropoiesis-stimulating agents",
+    "tail": "preventing acute kidney injury",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0942",
+    "head": "Human chorionic gonadotrophin",
+    "tail": "threatened miscarriage",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 15,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0944",
+    "head": "Antiplatelet agents",
+    "tail": "adults with COVID-19",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 17,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0882",
+    "head": "Vitamin A supplementation",
+    "tail": "preventing morbidity and mortality",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 18,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0930",
+    "head": "Outpatient",
+    "tail": "acute pulmonary embolism",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0899",
+    "head": "Corticosteroids",
+    "tail": "Kawasaki disease",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 15,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0918",
+    "head": "Oral calorie supplements",
+    "tail": "cystic fibrosis",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEffect",
+    "n_candidates": 19,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0830",
+    "head": "Probiotics",
+    "tail": "pediatric antibiotic-associated diarrhea",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0948",
+    "head": "Omega 3 fatty acid",
+    "tail": "cognitive decline and dementia",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0926",
+    "head": "Homocysteine-lowering interventions",
+    "tail": "preventing cardiovascular events",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 19,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0890",
+    "head": "Interventions",
+    "tail": "increasing fruit and vegetable consumption",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0841",
+    "head": "Diet, physical activity or both",
+    "tail": "prevention or delay of type 2 diabetes mellitus and its associated complications",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0905",
+    "head": "Drug treatments",
+    "tail": "managing cystic fibrosis-related diabetes",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 18,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0951",
+    "head": "Amantadine and rimantadine",
+    "tail": "influenza A",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 19,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0852",
+    "head": "Midwife continuity of care models",
+    "tail": "childbearing women",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0872",
+    "head": "Golimumab",
+    "tail": "rheumatoid arthritis",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0901",
+    "head": "Empirical antibiotics targeting gram-positive bacteria",
+    "tail": "febrile neutropenic patients with cancer",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 6,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0969",
+    "head": "Plasma and cerebrospinal fluid amyloid beta",
+    "tail": "diagnosis of Alzheimer's disease dementia and other dementias",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0941",
+    "head": "Corticosteroids",
+    "tail": "Guillain-Barr\u00e9 syndrome",
+    "ground_truth": "NoEffect",
+    "prediction": "Harmful",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0846",
+    "head": "Vaccines",
+    "tail": "preventing typhoid fever",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 18,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0853",
+    "head": "Thrombolytic therapy",
+    "tail": "pulmonary embolism",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 16,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0875",
+    "head": "Capecitabine",
+    "tail": "hormone receptor-positive versus hormone receptor-negative breast cancer",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEffect",
+    "n_candidates": 4,
+    "n_reranked": 4
+  },
+  {
+    "query_id": "v3_0924",
+    "head": "Methotrexate monotherapy",
+    "tail": "rheumatoid arthritis",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0896",
+    "head": "Beta-blockers",
+    "tail": "hypertension",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 19,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0863",
+    "head": "Interleukin-6 blocking agents",
+    "tail": "treating COVID-19: a living systematic review",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 3,
+    "n_reranked": 3
+  },
+  {
+    "query_id": "v3_0938",
+    "head": "Corticosteroid therapy",
+    "tail": "nephrotic syndrome",
+    "ground_truth": "NoEffect",
+    "prediction": "Harmful",
+    "n_candidates": 18,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0908",
+    "head": "Immediate sequential bilateral surgery",
+    "tail": "cataracts",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 17,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0837",
+    "head": "Intravitreal steroids",
+    "tail": "macular edema",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0958",
+    "head": "Heated CO(2) with or without humidification",
+    "tail": "minimally invasive abdominal surgery",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0836",
+    "head": "Eslicarbazepine acetate add-on",
+    "tail": "drug-resistant partial epilepsy",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 5,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0900",
+    "head": "Vasopressors",
+    "tail": "hypotensive shock",
+    "ground_truth": "NoEffect",
+    "prediction": "Harmful",
+    "n_candidates": 18,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0923",
+    "head": "Enteral tube feeding",
+    "tail": "people with severe dementia",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEffect",
+    "n_candidates": 19,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0845",
+    "head": "Antiviral treatment",
+    "tail": "Bell's palsy (idiopathic facial paralysis)",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEffect",
+    "n_candidates": 18,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0965",
+    "head": "Neoadjuvant chemotherapy before surgery",
+    "tail": "initial treatment",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0877",
+    "head": "Intra-uterine insemination",
+    "tail": "unexplained subfertility",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0888",
+    "head": "Tiotropium",
+    "tail": "chronic obstructive pulmonary disease",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0840",
+    "head": "Tumor necrosis factor (TNF) inhibitors",
+    "tail": "psoriatic arthritis",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 18,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0883",
+    "head": "Antibiotic therapy",
+    "tail": "pelvic inflammatory disease",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 13,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0959",
+    "head": "General health checks in adults",
+    "tail": "reducing morbidity and mortality from disease",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEffect",
+    "n_candidates": 17,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0876",
+    "head": "Music therapy",
+    "tail": "people with autism spectrum disorder",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 18,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0916",
+    "head": "Acupuncture",
+    "tail": "peripheral joint osteoarthritis",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 17,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0961",
+    "head": "Omega-3 fatty acids",
+    "tail": "primary and secondary prevention of cardiovascular disease",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 19,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0831",
+    "head": "Prognostic factors",
+    "tail": "development and progression of proliferative diabetic retinopathy",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 19,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0929",
+    "head": "Nicotine vaccines",
+    "tail": "smoking cessation",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 17,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0861",
+    "head": "Mindfulness-based stress reduction",
+    "tail": "women diagnosed with breast cancer",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 18,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0920",
+    "head": "Antiplatelet",
+    "tail": "people with heart failure",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0887",
+    "head": "Exercise interventions",
+    "tail": "upper-limb dysfunction due to breast cancer treatment",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 17,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0864",
+    "head": "Integrated management of childhood illness (IMCI) strategy",
+    "tail": "children under five",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 19,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0953",
+    "head": "N-acetylcysteine",
+    "tail": "sepsis and systemic inflammatory response",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 15,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0855",
+    "head": "Epidural",
+    "tail": "pain management",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 18,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0904",
+    "head": "Alginate dressings",
+    "tail": "healing diabetic foot ulcers",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0839",
+    "head": "Effect of mass deworming with antihelminthics",
+    "tail": "soil-transmitted helminths during pregnancy",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 3,
+    "n_reranked": 3
+  },
+  {
+    "query_id": "v3_0928",
+    "head": "Percutaneous vertebroplasty",
+    "tail": "osteoporotic vertebral compression fracture",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 18,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0874",
+    "head": "Exercise-based cardiac rehabilitation",
+    "tail": "coronary heart disease",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0869",
+    "head": "Zonisamide add-on therapy",
+    "tail": "focal epilepsy",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0835",
+    "head": "Psychological therapies",
+    "tail": "women who experience intimate partner violence",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 17,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0952",
+    "head": "Chest physiotherapy",
+    "tail": "acute bronchiolitis",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 17,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0949",
+    "head": "Nebulised deoxyribonuclease",
+    "tail": "viral bronchiolitis",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 2,
+    "n_reranked": 2
+  },
+  {
+    "query_id": "v3_0860",
+    "head": "Interactive computer-based interventions",
+    "tail": "weight loss or weight maintenance",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 19,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0847",
+    "head": "Aspirin with or without an antiemetic",
+    "tail": "acute migraine headaches",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0907",
+    "head": "Vaccines",
+    "tail": "common cold",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEffect",
+    "n_candidates": 16,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0892",
+    "head": "Vitamin D supplementation",
+    "tail": "mortality",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEffect",
+    "n_candidates": 17,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0963",
+    "head": "Vitamin E",
+    "tail": "Alzheimer's dementia and mild cognitive impairment",
+    "ground_truth": "NoEffect",
+    "prediction": "ERROR",
+    "n_candidates": 17,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0889",
+    "head": "Endovascular thrombectomy and intra-arterial interventions",
+    "tail": "acute ischaemic stroke",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0891",
+    "head": "Stem cell therapy",
+    "tail": "chronic ischaemic heart disease and congestive heart failure",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0865",
+    "head": "Certolizumab pegol",
+    "tail": "maintenance of medically induced remission",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0946",
+    "head": "Abdominal drainage",
+    "tail": "gastric cancer",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0912",
+    "head": "Fluid supplementation",
+    "tail": "neonatal unconjugated hyperbilirubinaemia",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0921",
+    "head": "Type I interferons",
+    "tail": "induction of remission",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0879",
+    "head": "Integrated disease management interventions",
+    "tail": "patients with chronic obstructive pulmonary disease",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0906",
+    "head": "Bronchoscopy-guided antimicrobial therapy",
+    "tail": "cystic fibrosis",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0838",
+    "head": "Opioid treatment",
+    "tail": "opioid withdrawal",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0833",
+    "head": "Information provision",
+    "tail": "stroke survivors and their carers",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0893",
+    "head": "Home care by outreach nursing",
+    "tail": "chronic obstructive pulmonary disease",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0927",
+    "head": "Arthroscopic surgery",
+    "tail": "degenerative knee disease (osteoarthritis including degenerative meniscal tears)",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0914",
+    "head": "Percutaneous vertebroplasty",
+    "tail": "osteoporotic vertebral compression fracture",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0933",
+    "head": "Dehumidifiers",
+    "tail": "chronic asthma",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0857",
+    "head": "Interventions",
+    "tail": "preventing obesity",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0913",
+    "head": "Polyunsaturated fatty acids (PUFA)",
+    "tail": "attention deficit hyperactivity disorder (ADHD)",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0909",
+    "head": "Antihypertensive pharmacotherapy",
+    "tail": "sudden cardiac death",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0880",
+    "head": "Oral 5-aminosalicylic acid",
+    "tail": "induction of remission",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0849",
+    "head": "Combined oral contraceptive pills",
+    "tail": "acne",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0945",
+    "head": "Bed rest in singleton pregnancies",
+    "tail": "preventing preterm birth",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0915",
+    "head": "Heated, humidified air",
+    "tail": "common cold",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0957",
+    "head": "WITHDRAWN. Antiviral treatment",
+    "tail": "Bell's palsy (idiopathic facial paralysis)",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0895",
+    "head": "Transfusion thresholds and other strategies",
+    "tail": "guiding allogeneic red blood cell transfusion",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0884",
+    "head": "Vaginal preparation with antiseptic solution before cesarean section",
+    "tail": "preventing postoperative infections",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0931",
+    "head": "Routine preoperative medical testing",
+    "tail": "cataract surgery",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0917",
+    "head": "Beta lactam antibiotic monotherapy",
+    "tail": "sepsis",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0881",
+    "head": "Parenting interventions",
+    "tail": "unintentional injuries",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0902",
+    "head": "Interventions",
+    "tail": "dialysis patients with hepatitis C virus (HCV) infection",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0856",
+    "head": "Oral 5-aminosalicylic acid",
+    "tail": "maintenance of remission",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0966",
+    "head": "Oral or transdermal opioids",
+    "tail": "osteoarthritis of the knee or hip",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0859",
+    "head": "Normothermic and hypothermic machine perfusion preservation",
+    "tail": "deceased donor kidney transplantation",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0858",
+    "head": "Botulinum toxin type A",
+    "tail": "facial wrinkles",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0832",
+    "head": "Antibiotics",
+    "tail": "community-acquired pneumonia",
+    "ground_truth": "Beneficial",
+    "prediction": "NoEvidence",
+    "n_candidates": 0
+  },
+  {
+    "query_id": "v3_0937",
+    "head": "Therapeutic touch",
+    "tail": "healing acute wounds",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEffect",
+    "n_candidates": 13,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0866",
+    "head": "Comparison of first-line chemotherapy including escalated BEACOPP",
+    "tail": "people with early unfavourable or advanced stage Hodgkin lymphoma",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0934",
+    "head": "Dipeptidyl-peptidase (DPP)-4 inhibitors and glucagon-like peptide (GLP)-1 analogues",
+    "tail": "prevention or delay of type 2 diabetes mellitus and its associated complications",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 19,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0848",
+    "head": "Vaccines",
+    "tail": "preventing herpes zoster",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0851",
+    "head": "Repetitive task training",
+    "tail": "improving functional ability after stroke",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 19,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0960",
+    "head": "Inhaled steroids with and without regular formoterol",
+    "tail": "asthma: serious adverse events",
+    "ground_truth": "NoEffect",
+    "prediction": "Harmful",
+    "n_candidates": 10,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0862",
+    "head": "Biologics or tofacitinib",
+    "tail": "people with rheumatoid arthritis unsuccessfully treated with biologics",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0910",
+    "head": "Calcium supplementation during pregnancy",
+    "tail": "preventing hypertensive disorders and related problems",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 16,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0950",
+    "head": "Methods",
+    "tail": "assessing pre-induction cervical ripening",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0956",
+    "head": "Muscle relaxants",
+    "tail": "pain management",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0871",
+    "head": "Risedronate",
+    "tail": "primary and secondary prevention of osteoporotic fractures",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0834",
+    "head": "Psychological interventions",
+    "tail": "needle-related procedural pain and distress",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 7,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0885",
+    "head": "Gonadotropin-releasing hormone (GnRH) analogues",
+    "tail": "premenstrual syndrome (PMS)",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0898",
+    "head": "Effect and safety of intravenous iron",
+    "tail": "treatment of iron deficiency anaemia",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0894",
+    "head": "Vaccines",
+    "tail": "preventing influenza",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 19,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0936",
+    "head": "Off-pump",
+    "tail": "ischaemic heart disease",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEffect",
+    "n_candidates": 14,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0943",
+    "head": "Vascular-endothelial-growth-factor (VEGF) targeting therapies",
+    "tail": "endocrine refractory or resistant metastatic breast cancer",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 18,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0964",
+    "head": "Influenza vaccination",
+    "tail": "healthcare workers who care for people aged 60 or older living",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 18,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0867",
+    "head": "Dietary interventions",
+    "tail": "preventing complications",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 17,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0940",
+    "head": "Rutosides",
+    "tail": "post-thrombotic syndrome",
+    "ground_truth": "NoEffect",
+    "prediction": "NoEffect",
+    "n_candidates": 15,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0886",
+    "head": "Mini-Mental State Examination (MMSE)",
+    "tail": "detection of dementia",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 19,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0919",
+    "head": "Valproate preparations",
+    "tail": "agitation",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 14,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0878",
+    "head": "Colesevelam",
+    "tail": "type 2 diabetes mellitus",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 16,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0922",
+    "head": "Maintenance chemotherapy",
+    "tail": "ovarian cancer",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0850",
+    "head": "Vaccines",
+    "tail": "measles, mumps, rubella, and varicella",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0870",
+    "head": "Topical treatments",
+    "tail": "scalp psoriasis",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 19,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0967",
+    "head": "Fermented milk",
+    "tail": "hypertension",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 18,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0854",
+    "head": "Peroxisome proliferator-activated receptor gamma agonists",
+    "tail": "preventing recurrent stroke and other vascular events",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 5,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0873",
+    "head": "Antibiotics",
+    "tail": "trachoma",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 10,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0939",
+    "head": "Hydrocolloid dressings",
+    "tail": "healing diabetic foot ulcers",
+    "ground_truth": "NoEffect",
+    "prediction": "Beneficial",
+    "n_candidates": 20,
+    "n_reranked": 5
+  },
+  {
+    "query_id": "v3_0868",
+    "head": "Oral hygiene care",
+    "tail": "critically ill patients to prevent ventilator-associated pneumonia",
+    "ground_truth": "Beneficial",
+    "prediction": "Beneficial",
+    "n_candidates": 19,
+    "n_reranked": 5
+  }
+]

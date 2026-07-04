@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KGSA - Knowledge Graph Search Agent</title>
+
+    <!-- vis.js for graph visualization -->
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #a0a0a0;
+            font-size: 1.1rem;
+        }
+
+        .search-panel {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .search-form {
+            display: flex;
+            gap: 16px;
+            align-items: flex-end;
+            flex-wrap: wrap;
+        }
+
+        .input-group {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #a0a0a0;
+            font-size: 0.9rem;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #3a7bd5;
+        }
+
+        .input-group input::placeholder {
+            color: #666;
+        }
+
+        .mode-select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .btn {
+            padding: 12px 32px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(58, 123, 213, 0.4);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .examples {
+            margin-top: 16px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .example-btn {
+            padding: 6px 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            color: #a0a0a0;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .example-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 380px;
+            gap: 20px;
+        }
+
+        @media (max-width: 1000px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .graph-panel {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .graph-header {
+            padding: 16px 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .graph-header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .status-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .status-idle {
+            background: rgba(108, 117, 125, 0.3);
+            color: #a0a0a0;
+        }
+
+        .status-searching {
+            background: rgba(0, 210, 255, 0.3);
+            color: #00d2ff;
+            animation: pulse 1.5s infinite;
+        }
+
+        .status-complete {
+            background: rgba(40, 167, 69, 0.3);
+            color: #28a745;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+
+        #graph-container {
+            height: 450px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .graph-footer {
+            padding: 12px 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .legend {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            color: #a0a0a0;
+        }
+
+        .legend-color {
+            width: 24px;
+            height: 4px;
+            border-radius: 2px;
+        }
+
+        .color-beneficial { background: #28a745; }
+        .color-harmful { background: #dc3545; }
+        .color-neutral { background: #6c757d; }
+
+        .edge-count {
+            font-size: 0.85rem;
+            color: #a0a0a0;
+        }
+
+        .info-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .info-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .info-card h3 {
+            font-size: 1rem;
+            color: #a0a0a0;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .result-display {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .result-conclusion {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .result-beneficial { color: #28a745; }
+        .result-harmful { color: #dc3545; }
+        .result-noeffect { color: #6c757d; }
+        .result-uncertain { color: #ffc107; }
+
+        .result-confidence {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+        }
+
+        .evidence-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: #a0a0a0;
+            text-transform: uppercase;
+        }
+
+        .stat-supporting .stat-value { color: #28a745; }
+        .stat-opposing .stat-value { color: #dc3545; }
+        .stat-neutral .stat-value { color: #6c757d; }
+
+        /* Paper Detail Panel */
+        .paper-detail {
+            display: none;
+        }
+
+        .paper-detail.active {
+            display: block;
+        }
+
+        .paper-detail-content {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .paper-relation-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .relation-beneficial {
+            background: rgba(40, 167, 69, 0.3);
+            color: #28a745;
+        }
+
+        .relation-harmful {
+            background: rgba(220, 53, 69, 0.3);
+            color: #dc3545;
+        }
+
+        .relation-neutral {
+            background: rgba(108, 117, 125, 0.3);
+            color: #6c757d;
+        }
+
+        .paper-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .paper-meta {
+            font-size: 0.85rem;
+            color: #a0a0a0;
+            margin-bottom: 12px;
+        }
+
+        .paper-meta a {
+            color: #00d2ff;
+            text-decoration: none;
+        }
+
+        .paper-meta a:hover {
+            text-decoration: underline;
+        }
+
+        .paper-evidence {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 3px solid #3a7bd5;
+            padding: 12px;
+            margin-bottom: 12px;
+            font-style: italic;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .paper-abstract {
+            font-size: 0.85rem;
+            color: #a0a0a0;
+            line-height: 1.6;
+            max-height: 150px;
+            overflow-y: auto;
+        }
+
+        .paper-confidence {
+            margin-top: 12px;
+            font-size: 0.9rem;
+        }
+
+        .confidence-bar {
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+            margin-top: 4px;
+            overflow: hidden;
+        }
+
+        .confidence-fill {
+            height: 100%;
+            border-radius: 3px;
+            transition: width 0.3s;
+        }
+
+        .log-container {
+            max-height: 200px;
+            overflow-y: auto;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.8rem;
+        }
+
+        .log-entry {
+            padding: 6px 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            gap: 8px;
+        }
+
+        .log-entry:last-child {
+            border-bottom: none;
+        }
+
+        .log-time {
+            color: #666;
+            flex-shrink: 0;
+        }
+
+        .log-message {
+            color: #a0a0a0;
+            word-break: break-word;
+        }
+
+        .log-entry.log-info .log-message { color: #00d2ff; }
+        .log-entry.log-success .log-message { color: #28a745; }
+        .log-entry.log-warning .log-message { color: #ffc107; }
+        .log-entry.log-error .log-message { color: #dc3545; }
+
+        /* Settings Modal */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal {
+            background: #1a1a2e;
+            border-radius: 16px;
+            padding: 32px;
+            width: 90%;
+            max-width: 500px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .modal h2 {
+            margin-bottom: 24px;
+            font-size: 1.5rem;
+        }
+
+        .modal .input-group {
+            margin-bottom: 20px;
+        }
+
+        .modal .input-group input {
+            width: 100%;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: flex-end;
+            margin-top: 24px;
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .settings-btn {
+            background: none;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #a0a0a0;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+
+        .settings-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        .api-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            color: #a0a0a0;
+        }
+
+        .api-status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .api-status-dot.connected { background: #28a745; }
+        .api-status-dot.disconnected { background: #dc3545; }
+
+        .preset-buttons {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .preset-btn {
+            padding: 6px 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            color: #a0a0a0;
+            font-size: 0.8rem;
+            cursor: pointer;
+        }
+
+        .preset-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        .click-hint {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>KGSA</h1>
+            <p>Knowledge Graph Search Agent - Real-time Causal Relation Discovery</p>
+            <div style="margin-top: 16px; display: flex; justify-content: center; align-items: center; gap: 16px;">
+                <div class="api-status" id="apiStatus">
+                    <span class="api-status-dot disconnected" id="apiStatusDot"></span>
+                    <span id="apiStatusText">API not configured</span>
+                </div>
+                <button class="settings-btn" onclick="openSettings()">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                    </svg>
+                    Settings
+                </button>
+            </div>
+        </header>
+
+        <!-- Settings Modal -->
+        <div class="modal-overlay" id="settingsModal">
+            <div class="modal">
+                <h2>API Settings</h2>
+
+                <div class="preset-buttons">
+                    <span style="color: #666; margin-right: 8px;">Presets:</span>
+                    <button class="preset-btn" onclick="setPreset('openai')">OpenAI</button>
+                    <button class="preset-btn" onclick="setPreset('packy')">Packy API</button>
+                    <button class="preset-btn" onclick="setPreset('anthropic')">Anthropic</button>
+                    <button class="preset-btn" onclick="setPreset('local')">Local (Ollama)</button>
+                </div>
+
+                <div class="input-group">
+                    <label for="apiKey">API Key</label>
+                    <input type="password" id="apiKey" placeholder="sk-...">
+                </div>
+
+                <div class="input-group">
+                    <label for="apiBase">API Base URL</label>
+                    <input type="text" id="apiBase" placeholder="https://api.openai.com/v1">
+                </div>
+
+                <div class="input-group">
+                    <label for="modelName">Model Name</label>
+                    <input type="text" id="modelName" placeholder="gpt-4o">
+                </div>
+
+                <div class="modal-buttons">
+                    <button class="btn btn-secondary" onclick="closeSettings()">Cancel</button>
+                    <button class="btn btn-primary" onclick="saveSettings()">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-panel">
+            <form class="search-form" id="searchForm">
+                <div class="input-group">
+                    <label for="headEntity">Head Entity (Treatment/Intervention)</label>
+                    <input type="text" id="headEntity" placeholder="e.g., aspirin" required>
+                </div>
+                <div class="input-group">
+                    <label for="tailEntity">Tail Entity (Condition/Outcome)</label>
+                    <input type="text" id="tailEntity" placeholder="e.g., cardiovascular disease" required>
+                </div>
+                <div class="input-group" style="max-width: 220px;">
+                    <label for="searchMode">Mode</label>
+                    <select id="searchMode" class="mode-select">
+                        <option value="pubmed">Online (PubMed + LLM)</option>
+                        <option value="kg">Local KG (Neo4j)</option>
+                    </select>
+                </div>
+                <div class="input-group" style="max-width: 220px;">
+                    <label for="multiHopToggle">Multi-hop</label>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <input type="checkbox" id="multiHopToggle">
+                        <span style="color: #666; font-size: 13px;">Path preview</span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" id="searchBtn">
+                    Search
+                </button>
+            </form>
+            <div class="examples">
+                <span style="color: #666; margin-right: 8px;">Examples:</span>
+                <button class="example-btn" data-head="aspirin" data-tail="cardiovascular disease">Aspirin → CVD</button>
+                <button class="example-btn" data-head="hydroxychloroquine" data-tail="COVID-19">HCQ → COVID-19</button>
+                <button class="example-btn" data-head="metformin" data-tail="type 2 diabetes">Metformin → T2D</button>
+                <button class="example-btn" data-head="smoking" data-tail="lung cancer">Smoking → Lung Cancer</button>
+                <button class="example-btn" data-head="obesity" data-tail="type 2 diabetes">Obesity → T2D</button>
+                <button class="example-btn" data-head="levodopa" data-tail="Parkinson's disease">Levodopa → Parkinson's</button>
+                <button class="example-btn" data-head="SARS-CoV-2" data-tail="COVID-19">SARS-CoV-2 → COVID-19</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="graph-panel">
+                <div class="graph-header">
+                    <h2>Knowledge Graph</h2>
+                    <span class="status-badge status-idle" id="statusBadge">Ready</span>
+                </div>
+                <div id="graph-container"></div>
+                <div class="graph-footer">
+                    <div class="legend">
+                        <div class="legend-item"><div class="legend-color color-beneficial"></div> Beneficial (Treat/Inhibit)</div>
+                        <div class="legend-item"><div class="legend-color color-harmful"></div> Harmful (Cause/Stimulate)</div>
+                        <div class="legend-item"><div class="legend-color color-neutral"></div> No Effect</div>
+                    </div>
+                    <div class="edge-count" id="edgeCount">0 evidence</div>
+                </div>
+            </div>
+
+            <div class="info-panel">
+                <div class="info-card">
+                    <h3>Result</h3>
+                    <div class="result-display" id="resultDisplay">
+                        <div class="result-conclusion result-uncertain" id="resultConclusion">-</div>
+                        <div class="result-confidence" id="resultConfidence">Start a search to see results</div>
+                    </div>
+                    <div class="evidence-stats">
+                        <div class="stat-item stat-supporting">
+                            <div class="stat-value" id="supportingCount">0</div>
+                            <div class="stat-label">Supporting</div>
+                        </div>
+                        <div class="stat-item stat-opposing">
+                            <div class="stat-value" id="opposingCount">0</div>
+                            <div class="stat-label">Opposing</div>
+                        </div>
+                        <div class="stat-item stat-neutral">
+                            <div class="stat-value" id="neutralCount">0</div>
+                            <div class="stat-label">Neutral</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paper Detail Card -->
+                <div class="info-card paper-detail" id="paperDetail">
+                    <h3>Evidence Detail</h3>
+                    <div class="paper-detail-content" id="paperDetailContent">
+                        <!-- Filled dynamically -->
+                    </div>
+                </div>
+
+                <!-- Placeholder when no edge selected -->
+                <div class="info-card" id="paperPlaceholder">
+                    <h3>Evidence Detail</h3>
+                    <div class="click-hint">
+                        Click on an edge in the graph to view paper details
+                    </div>
+                </div>
+
+                <div class="info-card" style="flex: 1;">
+                    <h3>Search Log</h3>
+                    <div class="log-container" id="logContainer">
+                        <div class="log-entry">
+                            <span class="log-time">--:--:--</span>
+                            <span class="log-message">Enter entities and click Search to begin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Graph visualization
+        let network = null;
+        let nodes = new vis.DataSet([]);
+        let edges = new vis.DataSet([]);
+        let eventSource = null;
+        let edgeData = {};  // Store paper metadata for each edge
+        let searchComplete = false;  // Track if search completed normally
+        let evidenceEdgeCount = 0;
+        let eventQueue = [];
+        let processingQueue = false;
+        let queueTimer = null;
+
+        const EVENT_DELAY_MS = {
+            init: 0,
+            status: 0,
+            path_preview: 200,
+            step_start: 300,
+            add_edge: 350,
+            step_end: 450,
+            complete: 0,
+            error: 0
+        };
+
+        function applyEdgeStyle(edgeId, edgeObj, kind) {
+            const parts = edgeId.split('_');
+            const idx = parseInt(parts[parts.length - 1], 10);
+            const safeIdx = Number.isFinite(idx) ? idx : Object.keys(edgeData).length + 1;
+            const dir = (safeIdx % 2 === 0) ? 'curvedCW' : 'curvedCCW';
+            const roundness = Math.min(0.15 + (safeIdx % 6) * 0.08, 0.6);
+            edgeObj.smooth = { type: dir, roundness: roundness };
+            if (kind === 'path') {
+                edgeObj.dashes = true;
+                edgeObj.width = Math.max(1.5, edgeObj.width || 1.5);
+            }
+        }
+
+        // Initialize the graph
+        function initGraph() {
+            const container = document.getElementById('graph-container');
+            const data = { nodes: nodes, edges: edges };
+            const options = {
+                layout: {
+                    improvedLayout: true
+                },
+                physics: {
+                    enabled: true,
+                    solver: 'forceAtlas2Based',
+                    forceAtlas2Based: {
+                        gravitationalConstant: -50,
+                        centralGravity: 0.01,
+                        springLength: 180,
+                        springConstant: 0.08,
+                        avoidOverlap: 0.8
+                    },
+                    stabilization: {
+                        iterations: 200,
+                        updateInterval: 50
+                    }
+                },
+                nodes: {
+                    shape: 'dot',
+                    size: 30,
+                    font: {
+                        size: 16,
+                        color: '#ffffff',
+                        face: 'Arial'
+                    },
+                    borderWidth: 3,
+                    borderWidthSelected: 5
+                },
+                edges: {
+                    smooth: {
+                        type: 'dynamic',
+                        roundness: 0.2
+                    },
+                    selectionWidth: 3,
+                    hoverWidth: 2
+                },
+                interaction: {
+                    hover: true,
+                    selectConnectedEdges: false,
+                    tooltipDelay: 100,
+                    multiselect: true
+                }
+            };
+
+            network = new vis.Network(container, data, options);
+
+            // Edge click handler
+            network.on('selectEdge', function(params) {
+                if (params.edges.length > 0) {
+                    const edgeId = params.edges[0];
+                    showPaperDetail(edgeId);
+                }
+            });
+
+            network.on('selectNode', function(params) {
+                if (params.nodes.length > 0) {
+                    const nodeId = params.nodes[0];
+                    showPaperDetail(nodeId);
+                }
+            });
+
+            // Deselect handler
+            network.on('deselectEdge', function(params) {
+                hidePaperDetail();
+            });
+            network.on('deselectNode', function(params) {
+                hidePaperDetail();
+            });
+        }
+
+        // Show paper detail panel
+        function showPaperDetail(edgeId) {
+            const paper = edgeData[edgeId];
+            if (!paper) return;
+
+            const relationType = paper.relation_type;
+            const relationClass = (relationType === 'Treat' || relationType === 'Inhibit') ? 'beneficial' :
+                                 (relationType === 'Cause' || relationType === 'Stimulate') ? 'harmful' : 'neutral';
+
+            const confidenceColor = relationClass === 'beneficial' ? '#28a745' :
+                                   relationClass === 'harmful' ? '#dc3545' : '#6c757d';
+
+            const authors = paper.authors ? paper.authors.slice(0, 3).join(', ') + (paper.authors.length > 3 ? ' et al.' : '') : 'Unknown';
+
+            document.getElementById('paperDetailContent').innerHTML = `
+                <span class="paper-relation-badge relation-${relationClass}">
+                    ${relationType} (${(paper.confidence * 100).toFixed(0)}%)
+                </span>
+                <div class="paper-title">${paper.title}</div>
+                <div class="paper-meta">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/${paper.pmid}/" target="_blank">PMID: ${paper.pmid}</a>
+                    &nbsp;|&nbsp; ${paper.journal || 'Unknown Journal'} &nbsp;|&nbsp; ${paper.pub_year || 'N/A'}
+                </div>
+                <div class="paper-meta" style="margin-top: -8px;">
+                    Authors: ${authors}
+                </div>
+                <div class="paper-evidence">"${paper.evidence_text}"</div>
+                <div class="paper-confidence">
+                    Extraction Confidence
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" style="width: ${paper.confidence * 100}%; background: ${confidenceColor};"></div>
+                    </div>
+                </div>
+                <details style="margin-top: 12px;">
+                    <summary style="cursor: pointer; color: #a0a0a0; font-size: 0.85rem;">View Full Abstract</summary>
+                    <div class="paper-abstract" style="margin-top: 8px;">${paper.abstract}</div>
+                </details>
+            `;
+
+            document.getElementById('paperDetail').classList.add('active');
+            document.getElementById('paperPlaceholder').style.display = 'none';
+        }
+
+        // Hide paper detail panel
+        function hidePaperDetail() {
+            document.getElementById('paperDetail').classList.remove('active');
+            document.getElementById('paperPlaceholder').style.display = 'block';
+        }
+
+        // Clear the graph
+        function clearGraph() {
+            nodes.clear();
+            edges.clear();
+            edgeData = {};
+            evidenceEdgeCount = 0;
+            searchComplete = false;
+            document.getElementById('edgeCount').textContent = '0 evidence';
+            hidePaperDetail();
+        }
+
+        // Add log entry
+        function addLog(message, type = 'info') {
+            const container = document.getElementById('logContainer');
+            const now = new Date();
+            const time = now.toTimeString().split(' ')[0];
+
+            const entry = document.createElement('div');
+            entry.className = `log-entry log-${type}`;
+            entry.innerHTML = `
+                <span class="log-time">${time}</span>
+                <span class="log-message">${message}</span>
+            `;
+
+            container.appendChild(entry);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        // Clear logs
+        function clearLogs() {
+            document.getElementById('logContainer').innerHTML = '';
+        }
+
+        // Update status badge
+        function setStatus(status, text) {
+            const badge = document.getElementById('statusBadge');
+            badge.className = `status-badge status-${status}`;
+            badge.textContent = text;
+        }
+
+        // Update result display
+        function updateResult(conclusion, confidence) {
+            const conclusionEl = document.getElementById('resultConclusion');
+            const confidenceEl = document.getElementById('resultConfidence');
+
+            conclusionEl.textContent = conclusion;
+            conclusionEl.className = `result-conclusion result-${conclusion.toLowerCase()}`;
+
+            if (confidence !== null) {
+                confidenceEl.textContent = `Confidence: ${(confidence * 100).toFixed(0)}%`;
+            }
+        }
+
+        // Update evidence counts
+        function updateEvidence(supporting, opposing, neutral) {
+            document.getElementById('supportingCount').textContent = supporting;
+            document.getElementById('opposingCount').textContent = opposing;
+            document.getElementById('neutralCount').textContent = neutral;
+        }
+
+        // Update edge count display
+        function updateEdgeCount() {
+            document.getElementById('edgeCount').textContent = `${evidenceEdgeCount} evidence${evidenceEdgeCount !== 1 ? 's' : ''}`;
+        }
+
+        function resetEventQueue() {
+            eventQueue = [];
+            processingQueue = false;
+            if (queueTimer) {
+                clearTimeout(queueTimer);
+                queueTimer = null;
+            }
+        }
+
+        function enqueueEvent(event) {
+            eventQueue.push(event);
+            if (!processingQueue) {
+                processEventQueue();
+            }
+        }
+
+        function processEventQueue() {
+            if (eventQueue.length === 0) {
+                processingQueue = false;
+                return;
+            }
+            processingQueue = true;
+            const nextEvent = eventQueue.shift();
+            handleEvent(nextEvent);
+            const delay = Object.prototype.hasOwnProperty.call(EVENT_DELAY_MS, nextEvent.type)
+                ? EVENT_DELAY_MS[nextEvent.type]
+                : 0;
+            queueTimer = setTimeout(processEventQueue, delay);
+        }
+
+        // Handle SSE events
+        function handleEvent(event) {
+            const data = event.data;
+
+            switch (event.type) {
+                case 'init':
+                    clearGraph();
+                    clearLogs();
+                    setStatus('searching', 'Searching...');
+
+                    // Add initial nodes (only head and tail)
+                    data.nodes.forEach(node => {
+                        if (node.id === 'head') {
+                            node.x = -260;
+                            node.y = 0;
+                            node.fixed = { x: true, y: true };
+                        }
+                        if (node.id === 'tail') {
+                            node.x = 260;
+                            node.y = 0;
+                            node.fixed = { x: true, y: true };
+                        }
+                        nodes.add(node);
+                    });
+
+                    addLog(data.message, 'info');
+                    updateResult('Searching...', null);
+                    updateEvidence(0, 0, 0);
+                    break;
+
+                case 'step_start':
+                    addLog(data.message, 'info');
+                    break;
+
+                case 'add_edge':
+                    // Add edge with unique ID
+                    const edgeId = data.edge.id;
+                    applyEdgeStyle(edgeId, data.edge, 'evidence');
+                    edges.add(data.edge);
+
+                    // Store paper metadata
+                    edgeData[edgeId] = data.edge.paper;
+                    evidenceEdgeCount += 1;
+
+                    const relType = data.relation;
+                    const logType = (relType === 'Treat' || relType === 'Inhibit') ? 'success' :
+                                   (relType === 'Cause' || relType === 'Stimulate') ? 'warning' : 'info';
+                    addLog(`Found: ${relType} (${(data.confidence * 100).toFixed(0)}%) - PMID:${data.pmid}`, logType);
+
+                    updateEdgeCount();
+                    break;
+
+                case 'path_preview':
+                    data.nodes.forEach(node => {
+                        if (!nodes.get(node.id)) {
+                            if (!node.fixed) {
+                                const jitterX = (Math.random() - 0.5) * 120;
+                                const jitterY = (Math.random() - 0.5) * 200;
+                                node.x = (node.x || 0) + jitterX;
+                                node.y = (node.y || 0) + jitterY;
+                            }
+                            nodes.add(node);
+                        }
+                    });
+                    data.edges.forEach(edge => {
+                        if (!edges.get(edge.id)) {
+                            applyEdgeStyle(edge.id, edge, 'path');
+                            edges.add(edge);
+                        }
+                        edgeData[edge.id] = edge.paper;
+                    });
+                    updateEdgeCount();
+                    addLog(data.message, 'info');
+                    break;
+
+                case 'step_end':
+                    updateResult(data.conclusion, data.confidence);
+                    updateEvidence(data.supporting, data.opposing, data.neutral);
+                    addLog(`Step ${data.step}: ${data.conclusion} (conf: ${(data.confidence * 100).toFixed(0)}%)`, 'info');
+
+                    if (data.should_stop) {
+                        addLog(`PRM suggests stopping: ${data.stop_reason}`, 'warning');
+                    }
+                    break;
+
+                case 'complete':
+                    searchComplete = true;  // Mark search as completed normally
+                    setStatus('complete', 'Complete');
+                    updateResult(data.conclusion, data.confidence);
+                    updateEvidence(data.evidence.supporting, data.evidence.opposing, data.evidence.neutral);
+                    addLog(data.message, 'success');
+                    addLog(`Total: ${data.papers} papers, ${data.steps} steps`, 'info');
+
+                    // Re-enable button
+                    document.getElementById('searchBtn').disabled = false;
+
+                    // Close the event source since we're done
+                    if (eventSource) {
+                        eventSource.close();
+                    }
+                    break;
+
+                case 'status':
+                    // Determine log type based on message content
+                    let statusType = 'info';
+                    if (data.message.includes('error') || data.message.includes('Error')) {
+                        statusType = 'error';
+                    } else if (data.message.includes('No causal')) {
+                        statusType = 'warning';
+                    }
+                    addLog(data.message, statusType);
+                    break;
+
+                case 'error':
+                    setStatus('idle', 'Error');
+                    addLog(data.message, 'error');
+                    document.getElementById('searchBtn').disabled = false;
+
+                    // If API not configured, prompt to open settings
+                    if (data.message.includes('API Key not set')) {
+                        setTimeout(() => {
+                            if (confirm('API Key not configured. Open settings?')) {
+                                openSettings();
+                            }
+                        }, 100);
+                    }
+                    break;
+            }
+        }
+
+        // Start search
+        function startSearch(head, tail) {
+            // Close existing connection
+            if (eventSource) {
+                eventSource.close();
+            }
+
+            // Disable button
+            document.getElementById('searchBtn').disabled = true;
+            resetEventQueue();
+            searchComplete = false;
+
+            const mode = document.getElementById('searchMode').value || 'pubmed';
+            const multiHopToggle = document.getElementById('multiHopToggle');
+            const multiHop = (multiHopToggle && multiHopToggle.checked) ? '1' : '0';
+            // Connect to SSE endpoint
+            eventSource = new EventSource(`/search?head=${encodeURIComponent(head)}&tail=${encodeURIComponent(tail)}&mode=${encodeURIComponent(mode)}&multi_hop=${encodeURIComponent(multiHop)}`);
+
+            eventSource.onmessage = function(e) {
+                try {
+                    const event = JSON.parse(e.data);
+                    enqueueEvent(event);
+                } catch (err) {
+                    console.error('Parse error:', err);
+                }
+            };
+
+            eventSource.onerror = function(e) {
+                // Don't show error if search completed normally
+                if (searchComplete) {
+                    console.log('SSE stream closed after completion');
+                } else {
+                    console.error('SSE error:', e);
+                    setStatus('idle', 'Error');
+                    addLog('Connection error - please try again', 'error');
+                }
+                document.getElementById('searchBtn').disabled = false;
+                if (eventSource) {
+                    eventSource.close();
+                }
+                resetEventQueue();
+            };
+        }
+
+        function updateModeControls() {
+            const mode = document.getElementById('searchMode').value || 'pubmed';
+            const multiHopToggle = document.getElementById('multiHopToggle');
+            if (!multiHopToggle) {
+                return;
+            }
+            const enable = mode === 'kg';
+            multiHopToggle.disabled = !enable;
+            if (!enable) {
+                multiHopToggle.checked = false;
+            }
+        }
+
+        // ============ Settings Management ============
+
+        const PRESETS = {
+            openai: { api_base: 'https://api.openai.com/v1', model: 'gpt-4o' },
+            packy: { api_base: 'https://www.packyapi.com/v1', model: 'gpt-5-chat' },
+            anthropic: { api_base: 'https://api.anthropic.com/v1', model: 'claude-3-sonnet-20240229' },
+            local: { api_base: 'http://localhost:11434/v1', model: 'llama2' }
+        };
+
+        function openSettings() {
+            document.getElementById('settingsModal').classList.add('active');
+            loadCurrentConfig();
+        }
+
+        function closeSettings() {
+            document.getElementById('settingsModal').classList.remove('active');
+        }
+
+        function setPreset(preset) {
+            const config = PRESETS[preset];
+            if (config) {
+                document.getElementById('apiBase').value = config.api_base;
+                document.getElementById('modelName').value = config.model;
+            }
+        }
+
+        function loadCurrentConfig() {
+            fetch('/api/config')
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById('apiBase').value = data.api_base || '';
+                    document.getElementById('modelName').value = data.model || '';
+                    // Don't load API key for security
+                })
+                .catch(err => console.error('Failed to load config:', err));
+        }
+
+        function saveSettings() {
+            const apiKey = document.getElementById('apiKey').value.trim();
+            const apiBase = document.getElementById('apiBase').value.trim();
+            const model = document.getElementById('modelName').value.trim();
+
+            const config = {};
+            if (apiKey) config.api_key = apiKey;
+            if (apiBase) config.api_base = apiBase;
+            if (model) config.model = model;
+
+            fetch('/api/config', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(config)
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    closeSettings();
+                    updateApiStatus();
+                    addLog('Settings saved successfully', 'success');
+                }
+            })
+            .catch(err => {
+                console.error('Failed to save config:', err);
+                addLog('Failed to save settings', 'error');
+            });
+        }
+
+        function updateApiStatus() {
+            fetch('/api/config')
+                .then(res => res.json())
+                .then(data => {
+                    const dot = document.getElementById('apiStatusDot');
+                    const text = document.getElementById('apiStatusText');
+
+                    if (data.api_key_set) {
+                        dot.className = 'api-status-dot connected';
+                        text.textContent = `API configured (${data.model || 'unknown model'})`;
+                    } else {
+                        dot.className = 'api-status-dot disconnected';
+                        text.textContent = 'API not configured';
+                    }
+                })
+                .catch(err => {
+                    console.error('Failed to get config:', err);
+                });
+        }
+
+        // Close modal on outside click
+        document.getElementById('settingsModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeSettings();
+            }
+        });
+
+        // ============ Initialize ============
+
+        document.addEventListener('DOMContentLoaded', function() {
+            initGraph();
+            updateApiStatus();
+            updateModeControls();
+
+            // Form submit
+            document.getElementById('searchForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const head = document.getElementById('headEntity').value.trim();
+                const tail = document.getElementById('tailEntity').value.trim();
+
+                if (head && tail) {
+                    startSearch(head, tail);
+                }
+            });
+
+            // Example buttons
+            document.querySelectorAll('.example-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.getElementById('headEntity').value = this.dataset.head;
+                    document.getElementById('tailEntity').value = this.dataset.tail;
+                });
+            });
+
+            const modeSelect = document.getElementById('searchMode');
+            if (modeSelect) {
+                modeSelect.addEventListener('change', updateModeControls);
+            }
+        });
+    </script>
+</body>
+</html>

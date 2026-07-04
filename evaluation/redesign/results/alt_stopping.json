@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "n": 201
+  },
+  "strategies": {
+    "entropy": {
+      "sweep": [
+        {
+          "threshold": 0.3,
+          "metrics": {
+            "overall_acc": 62.69,
+            "noe_acc": 75.9,
+            "ben_acc": 53.39,
+            "drift_rate": 13.7,
+            "mean_steps": 5.05,
+            "n": 201
+          }
+        },
+        {
+          "threshold": 0.5,
+          "metrics": {
+            "overall_acc": 63.18,
+            "noe_acc": 75.9,
+            "ben_acc": 54.24,
+            "drift_rate": 13.01,
+            "mean_steps": 3.55,
+            "n": 201
+          }
+        },
+        {
+          "threshold": 0.7,
+          "metrics": {
+            "overall_acc": 62.19,
+            "noe_acc": 74.7,
+            "ben_acc": 53.39,
+            "drift_rate": 13.79,
+            "mean_steps": 3.27,
+            "n": 201
+          }
+        },
+        {
+          "threshold": 0.9,
+          "metrics": {
+            "overall_acc": 62.69,
+            "noe_acc": 74.7,
+            "ben_acc": 54.24,
+            "drift_rate": 13.1,
+            "mean_steps": 3.25,
+            "n": 201
+          }
+        },
+        {
+          "threshold": 1.0,
+          "metrics": {
+            "overall_acc": 62.69,
+            "noe_acc": 74.7,
+            "ben_acc": 54.24,
+            "drift_rate": 13.1,
+            "mean_steps": 3.25,
+            "n": 201
+          }
+        }
+      ],
+      "best": {
+        "threshold": 0.5,
+        "metrics": {
+          "overall_acc": 63.18,
+          "noe_acc": 75.9,
+          "ben_acc": 54.24,
+          "drift_rate": 13.01,
+          "mean_steps": 3.55,
+          "n": 201
+        }
+      },
+      "step_matched": {
+        "threshold": 0.9,
+        "metrics": {
+          "overall_acc": 62.69,
+          "noe_acc": 74.7,
+          "ben_acc": 54.24,
+          "drift_rate": 13.1,
+          "mean_steps": 3.25,
+          "n": 201
+        }
+      }
+    },
+    "margin": {
+      "sweep": [
+        {
+          "threshold": 0.3,
+          "metrics": {
+            "overall_acc": 63.18,
+            "noe_acc": 75.9,
+            "ben_acc": 54.24,
+            "drift_rate": 13.01,
+            "mean_steps": 3.38,
+            "n": 201
+          }
+        },
+        {
+          "threshold": 0.4,
+          "metrics": {
+            "overall_acc": 63.18,
+            "noe_acc": 75.9,
+            "ben_acc": 54.24,
+            "drift_rate": 13.01,
+            "mean_steps": 3.43,
+            "n": 201
+          }
+        },
+        {
+          "threshold": 0.5,
+          "metrics": {
+            "overall_acc": 63.18,
+            "noe_acc": 75.9,
+            "ben_acc": 54.24,
+            "drift_rate": 13.01,
+            "mean_steps": 3.46,
+            "n": 201
+          }
+        },
+        {
+          "threshold": 0.6,
+          "metrics": {
+            "overall_acc": 63.18,
+            "noe_acc": 75.9,
+            "ben_acc": 54.24,
+            "drift_rate": 13.01,
+            "mean_steps": 3.52,
+            "n": 201
+          }
+        },
+        {
+          "threshold": 0.7,
+          "metrics": {
+            "overall_acc": 62.69,
+            "noe_acc": 75.9,
+            "ben_acc": 53.39,
+            "drift_rate": 13.7,
+            "mean_steps": 3.89,
+            "n": 201
+          }
+        }
+      ],
+      "best": {
+        "threshold": 0.3,
+        "metrics": {
+          "overall_acc": 63.18,
+          "noe_acc": 75.9,
+          "ben_acc": 54.24,
+          "drift_rate": 13.01,
+          "mean_steps": 3.38,
+          "n": 201
+        }
+      },
+      "step_matched": {
+        "threshold": 0.3,
+        "metrics": {
+          "overall_acc": 63.18,
+          "noe_acc": 75.9,
+          "ben_acc": 54.24,
+          "drift_rate": 13.01,
+          "mean_steps": 3.38,
+          "n": 201
+        }
+      }
+    },
+    "patience": {
+      "sweep": [
+        {
+          "threshold": 2,
+          "metrics": {
+            "overall_acc": 62.19,
+            "noe_acc": 71.08,
+            "ben_acc": 55.93,
+            "drift_rate": 15.54,
+            "mean_steps": 4.01,
+            "n": 201
+          }
+        },
+        {
+          "threshold": 3,
+          "metrics": {
+            "overall_acc": 60.2,
+            "noe_acc": 63.86,
+            "ben_acc": 57.63,
+            "drift_rate": 19.33,
+            "mean_steps": 4.77,
+            "n": 201
+          }
+        },
+        {
+          "threshold": 4,
+          "metrics": {
+            "overall_acc": 56.72,
+            "noe_acc": 57.83,
+            "ben_acc": 55.93,
+            "drift_rate": 24.0,
+            "mean_steps": 5.55,
+            "n": 201
+          }
+        },
+        {
+          "threshold": 5,
+          "metrics": {
+            "overall_acc": 55.72,
+            "noe_acc": 56.63,
+            "ben_acc": 55.08,
+            "drift_rate": 25.33,
+            "mean_steps": 6.27,
+            "n": 201
+          }
+        }
+      ],
+      "best": {
+        "threshold": 2,
+        "metrics": {
+          "overall_acc": 62.19,
+          "noe_acc": 71.08,
+          "ben_acc": 55.93,
+          "drift_rate": 15.54,
+          "mean_steps": 4.01,
+          "n": 201
+        }
+      },
+      "step_matched": {
+        "threshold": 2,
+        "metrics": {
+          "overall_acc": 62.19,
+          "noe_acc": 71.08,
+          "ben_acc": 55.93,
+          "drift_rate": 15.54,
+          "mean_steps": 4.01,
+          "n": 201
+        }
+      }
+    }
+  }
+}

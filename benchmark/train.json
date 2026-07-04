@@ -1,0 +1,5702 @@
+[
+  {
+    "query_id": "kg_MESH_D019698_MESH_D006528",
+    "head_entity": {
+      "name": "hepatitis C",
+      "type": "Disease",
+      "standard_id": "MESH:D019698"
+    },
+    "tail_entity": {
+      "name": "hepatocellular carcinoma",
+      "type": "Disease",
+      "standard_id": "MESH:D006528"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 20,
+    "confidence": 0.9999999999999283,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg__MESH_D013927",
+    "head_entity": {
+      "name": "atherothrombosis",
+      "type": "Disease",
+      "standard_id": ""
+    },
+    "tail_entity": {
+      "name": "thrombosis",
+      "type": "Disease",
+      "standard_id": "MESH:D013927"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 15,
+    "confidence": 0.999999936988156,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D002784_MESH_D050197",
+    "head_entity": {
+      "name": "cholesterol",
+      "type": "Chemical",
+      "standard_id": "MESH:D002784"
+    },
+    "tail_entity": {
+      "name": "atherosclerosis",
+      "type": "Disease",
+      "standard_id": "MESH:D050197"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 44,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D009765",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 62,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D000069604_MESH_D054556",
+    "head_entity": {
+      "name": "dabigatran",
+      "type": "Chemical",
+      "standard_id": "MESH:D000069604"
+    },
+    "tail_entity": {
+      "name": "venous thromboembolism",
+      "type": "Disease",
+      "standard_id": "MESH:D054556"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 19,
+    "confidence": 0.9999999999999947,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D003907_MESH_D000086382",
+    "head_entity": {
+      "name": "dexamethasone",
+      "type": "Chemical",
+      "standard_id": "MESH:D003907"
+    },
+    "tail_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 51,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D006333_MESH_D003643",
+    "head_entity": {
+      "name": "heart failure",
+      "type": "Disease",
+      "standard_id": "MESH:D006333"
+    },
+    "tail_entity": {
+      "name": "death",
+      "type": "Disease",
+      "standard_id": "MESH:D003643"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 28,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D015431_MESH_D003924",
+    "head_entity": {
+      "name": "weight loss",
+      "type": "Disease",
+      "standard_id": "MESH:D015431"
+    },
+    "tail_entity": {
+      "name": "type 2 diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003924"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 38,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D000093542_MESH_D000093284",
+    "head_entity": {
+      "name": "Gemcitabine",
+      "type": "Chemical",
+      "standard_id": "MESH:D000093542"
+    },
+    "tail_entity": {
+      "name": "muscle invasive urothelial carcinoma",
+      "type": "Disease",
+      "standard_id": "MESH:D000093284"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 26,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D000068296_MESH_C535781",
+    "head_entity": {
+      "name": "Risedronate",
+      "type": "Chemical",
+      "standard_id": "MESH:D000068296"
+    },
+    "tail_entity": {
+      "name": "vertebral fractures",
+      "type": "Disease",
+      "standard_id": "MESH:C535781"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 28,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_NCBI_6622_MESH_D010300",
+    "head_entity": {
+      "name": "alpha-syn",
+      "type": "Gene",
+      "standard_id": "NCBI:6622"
+    },
+    "tail_entity": {
+      "name": "Parkinson's disease",
+      "type": "Disease",
+      "standard_id": "MESH:D010300"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 178,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_NCBI_4137_MESH_D019636",
+    "head_entity": {
+      "name": "tau",
+      "type": "Gene",
+      "standard_id": "NCBI:4137"
+    },
+    "tail_entity": {
+      "name": "neurodegeneration",
+      "type": "Disease",
+      "standard_id": "MESH:D019636"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 23,
+    "confidence": 0.9999999999967845,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D007249_MESH_D065626",
+    "head_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "tail_entity": {
+      "name": "nonalcoholic fatty liver disease",
+      "type": "Disease",
+      "standard_id": "MESH:D065626"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 17,
+    "confidence": 0.9999999942107868,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D003920_MESH_D006528",
+    "head_entity": {
+      "name": "uncontrolled diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003920"
+    },
+    "tail_entity": {
+      "name": "hepatocellular carcinoma",
+      "type": "Disease",
+      "standard_id": "MESH:D006528"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 16,
+    "confidence": 0.9999999999464185,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D001008",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "anxiety symptoms",
+      "type": "Disease",
+      "standard_id": "MESH:D001008"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 28,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D000086382_MESH_D012140",
+    "head_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "tail_entity": {
+      "name": "respiratory diseases",
+      "type": "Disease",
+      "standard_id": "MESH:D012140"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 17,
+    "confidence": 0.999999998966212,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D017382_MESH_D007249",
+    "head_entity": {
+      "name": "reactive oxygen species",
+      "type": "Chemical",
+      "standard_id": "MESH:D017382"
+    },
+    "tail_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "kg_relation_type": "Stimulate",
+    "ground_truth": "Harmful",
+    "evidence_count": 26,
+    "confidence": 0.9999999999995437,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D015525_MESH_D007249",
+    "head_entity": {
+      "name": "omega-3 fatty acid",
+      "type": "Chemical",
+      "standard_id": "MESH:D015525"
+    },
+    "tail_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 38,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D008094_MESH_D003866",
+    "head_entity": {
+      "name": "lithium",
+      "type": "Chemical",
+      "standard_id": "MESH:D008094"
+    },
+    "tail_entity": {
+      "name": "depression",
+      "type": "Disease",
+      "standard_id": "MESH:D003866"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 18,
+    "confidence": 0.9999999999746827,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D050197_MESH_D020521",
+    "head_entity": {
+      "name": "atherosclerosis",
+      "type": "Disease",
+      "standard_id": "MESH:D050197"
+    },
+    "tail_entity": {
+      "name": "stroke",
+      "type": "Disease",
+      "standard_id": "MESH:D020521"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 22,
+    "confidence": 0.9999999999974161,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D007980_MESH_D004409",
+    "head_entity": {
+      "name": "levodopa",
+      "type": "Chemical",
+      "standard_id": "MESH:D007980"
+    },
+    "tail_entity": {
+      "name": "dyskinesia",
+      "type": "Disease",
+      "standard_id": "MESH:D004409"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 64,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_NCBI_2697049_MESH_D018352",
+    "head_entity": {
+      "name": "SARS-CoV-2",
+      "type": "Species",
+      "standard_id": "NCBI:2697049"
+    },
+    "tail_entity": {
+      "name": "anovel coronavirus",
+      "type": "Disease",
+      "standard_id": "MESH:D018352"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 22,
+    "confidence": 0.9999999999999999,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D016642_MESH_D014029",
+    "head_entity": {
+      "name": "bupropion",
+      "type": "Chemical",
+      "standard_id": "MESH:D016642"
+    },
+    "tail_entity": {
+      "name": "tobacco",
+      "type": "Disease",
+      "standard_id": "MESH:D014029"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 28,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_C531550_MESH_D010051",
+    "head_entity": {
+      "name": "olaparib",
+      "type": "Chemical",
+      "standard_id": "MESH:C531550"
+    },
+    "tail_entity": {
+      "name": "ovarian cancer",
+      "type": "Disease",
+      "standard_id": "MESH:D010051"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 35,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D000069056_MESH_D001714",
+    "head_entity": {
+      "name": "lurasidone",
+      "type": "Chemical",
+      "standard_id": "MESH:D000069056"
+    },
+    "tail_entity": {
+      "name": "Bipolar Disorder",
+      "type": "Disease",
+      "standard_id": "MESH:D001714"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 23,
+    "confidence": 0.9999999999999999,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D009202_MESH_D006333",
+    "head_entity": {
+      "name": "cardiomyopathies",
+      "type": "Disease",
+      "standard_id": "MESH:D009202"
+    },
+    "tail_entity": {
+      "name": "heart failure",
+      "type": "Disease",
+      "standard_id": "MESH:D006333"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 18,
+    "confidence": 0.9999999986974271,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D020257_MESH_D006333",
+    "head_entity": {
+      "name": "left ventricular (LV) remodeling",
+      "type": "Disease",
+      "standard_id": "MESH:D020257"
+    },
+    "tail_entity": {
+      "name": "heart failure",
+      "type": "Disease",
+      "standard_id": "MESH:D006333"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 29,
+    "confidence": 0.9999999999999979,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_N_A_MESH_D003924",
+    "head_entity": {
+      "name": "oropharyngeal colostrum",
+      "type": "Therapy",
+      "standard_id": "N/A"
+    },
+    "tail_entity": {
+      "name": "type 2 diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003924"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 19,
+    "confidence": 0.9999999999999327,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_C549068_MESH_D006333",
+    "head_entity": {
+      "name": "LCZ696",
+      "type": "Chemical",
+      "standard_id": "MESH:C549068"
+    },
+    "tail_entity": {
+      "name": "heart failure",
+      "type": "Disease",
+      "standard_id": "MESH:D006333"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 22,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D006562",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "herpes zoster",
+      "type": "Disease",
+      "standard_id": "MESH:D006562"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 20,
+    "confidence": 0.9999999999999999,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D016666_MESH_D000086382",
+    "head_entity": {
+      "name": "fluvoxamine",
+      "type": "Chemical",
+      "standard_id": "MESH:D016666"
+    },
+    "tail_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 28,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_NCBI_120892_MESH_D010300",
+    "head_entity": {
+      "name": "leucine-rich repeat kinase 2",
+      "type": "Gene",
+      "standard_id": "NCBI:120892"
+    },
+    "tail_entity": {
+      "name": "Parkinson's disease",
+      "type": "Disease",
+      "standard_id": "MESH:D010300"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 78,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D000086382_MESH_D006333",
+    "head_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "tail_entity": {
+      "name": "heart failure",
+      "type": "Disease",
+      "standard_id": "MESH:D006333"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 16,
+    "confidence": 0.9999999994749013,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D007249_MESH_D006331",
+    "head_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "tail_entity": {
+      "name": "Cardiac involvement",
+      "type": "Disease",
+      "standard_id": "MESH:D006331"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 16,
+    "confidence": 0.9999999466344136,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg__MESH_D002318",
+    "head_entity": {
+      "name": "atherothrombosis",
+      "type": "Disease",
+      "standard_id": ""
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 24,
+    "confidence": 0.999999999999367,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D008687_MESH_D004714",
+    "head_entity": {
+      "name": "metformin",
+      "type": "Chemical",
+      "standard_id": "MESH:D008687"
+    },
+    "tail_entity": {
+      "name": "endometrial atypical hyperplasia",
+      "type": "Disease",
+      "standard_id": "MESH:D004714"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 21,
+    "confidence": 0.9999999999999934,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_C462182_MESH_D000086382",
+    "head_entity": {
+      "name": "favipiravir",
+      "type": "Chemical",
+      "standard_id": "MESH:C462182"
+    },
+    "tail_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 40,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D013927_MESH_D009203",
+    "head_entity": {
+      "name": "thrombosis",
+      "type": "Disease",
+      "standard_id": "MESH:D013927"
+    },
+    "tail_entity": {
+      "name": "myocardial infarction",
+      "type": "Disease",
+      "standard_id": "MESH:D009203"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 20,
+    "confidence": 0.9999999998436913,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_-_MESH_D002318",
+    "head_entity": {
+      "name": "ROS",
+      "type": "Chemical",
+      "standard_id": "-"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 17,
+    "confidence": 0.9999999999999893,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D024821_MESH_D003924",
+    "head_entity": {
+      "name": "cardiometabolic disease",
+      "type": "Disease",
+      "standard_id": "MESH:D024821"
+    },
+    "tail_entity": {
+      "name": "type 2 diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003924"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 38,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D007980_MESH_D010300",
+    "head_entity": {
+      "name": "levodopa",
+      "type": "Chemical",
+      "standard_id": "MESH:D007980"
+    },
+    "tail_entity": {
+      "name": "Parkinson's disease",
+      "type": "Disease",
+      "standard_id": "MESH:D010300"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 135,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D030361_MESH_D002583",
+    "head_entity": {
+      "name": "HPV infection",
+      "type": "Disease",
+      "standard_id": "MESH:D030361"
+    },
+    "tail_entity": {
+      "name": "cervical cancer",
+      "type": "Disease",
+      "standard_id": "MESH:D002583"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 19,
+    "confidence": 0.9999999999999998,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D024821_MESH_D002318",
+    "head_entity": {
+      "name": "cardiometabolic disease",
+      "type": "Disease",
+      "standard_id": "MESH:D024821"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 73,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D014810_MESH_D065626",
+    "head_entity": {
+      "name": "vitamin E",
+      "type": "Chemical",
+      "standard_id": "MESH:D014810"
+    },
+    "tail_entity": {
+      "name": "nonalcoholic fatty liver disease",
+      "type": "Disease",
+      "standard_id": "MESH:D065626"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 54,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_C522181_MESH_D006470",
+    "head_entity": {
+      "name": "apixaban",
+      "type": "Chemical",
+      "standard_id": "MESH:C522181"
+    },
+    "tail_entity": {
+      "name": "haemorrhage",
+      "type": "Disease",
+      "standard_id": "MESH:D006470"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 34,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_NCBI_10912_MESH_D005759",
+    "head_entity": {
+      "name": "rotavirus",
+      "type": "Species",
+      "standard_id": "NCBI:10912"
+    },
+    "tail_entity": {
+      "name": "Acute Gastroenteritis",
+      "type": "Disease",
+      "standard_id": "MESH:D005759"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 24,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D003920",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "uncontrolled diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003920"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 36,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D003924_MESH_D002318",
+    "head_entity": {
+      "name": "type 2 diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003924"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 37,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D020181_MESH_D006973",
+    "head_entity": {
+      "name": "obstructive sleep apnea",
+      "type": "Disease",
+      "standard_id": "MESH:D020181"
+    },
+    "tail_entity": {
+      "name": "High Blood Pressure",
+      "type": "Disease",
+      "standard_id": "MESH:D006973"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 19,
+    "confidence": 0.9999999999397347,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_NCBI_5727_MESH_D001478",
+    "head_entity": {
+      "name": "PTCH1",
+      "type": "Gene",
+      "standard_id": "NCBI:5727"
+    },
+    "tail_entity": {
+      "name": "Gorlin Syndrome",
+      "type": "Disease",
+      "standard_id": "MESH:D001478"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 26,
+    "confidence": 0.9999999999999661,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D050171_MESH_D002318",
+    "head_entity": {
+      "name": "dyslipidemia",
+      "type": "Disease",
+      "standard_id": "MESH:D050171"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 22,
+    "confidence": 0.9999999999973204,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_C035276_MESH_D002318",
+    "head_entity": {
+      "name": "icosapent ethyl",
+      "type": "Chemical",
+      "standard_id": "MESH:C035276"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 20,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg__MESH_D007333",
+    "head_entity": {
+      "name": "atherothrombosis",
+      "type": "Disease",
+      "standard_id": ""
+    },
+    "tail_entity": {
+      "name": "insulin resistance",
+      "type": "Disease",
+      "standard_id": "MESH:D007333"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 22,
+    "confidence": 0.9999999999876906,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D018205_MESH_D007249",
+    "head_entity": {
+      "name": "osteosarcopenic adiposity (OSA) syndrome",
+      "type": "Disease",
+      "standard_id": "MESH:D018205"
+    },
+    "tail_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 29,
+    "confidence": 0.9999999999999973,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D007333_MESH_D003924",
+    "head_entity": {
+      "name": "insulin resistance",
+      "type": "Disease",
+      "standard_id": "MESH:D007333"
+    },
+    "tail_entity": {
+      "name": "type 2 diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003924"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 113,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D009203_MESH_D012770",
+    "head_entity": {
+      "name": "myocardial infarction",
+      "type": "Disease",
+      "standard_id": "MESH:D009203"
+    },
+    "tail_entity": {
+      "name": "cardiogenic shock",
+      "type": "Disease",
+      "standard_id": "MESH:D012770"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 16,
+    "confidence": 0.9999999993489848,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D050197",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "atherosclerosis",
+      "type": "Disease",
+      "standard_id": "MESH:D050197"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 20,
+    "confidence": 0.9999999999997048,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D006973_MESH_D051436",
+    "head_entity": {
+      "name": "High Blood Pressure",
+      "type": "Disease",
+      "standard_id": "MESH:D006973"
+    },
+    "tail_entity": {
+      "name": "chronic kidney disease",
+      "type": "Disease",
+      "standard_id": "MESH:D051436"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 30,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D000086382_MESH_D013927",
+    "head_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "tail_entity": {
+      "name": "thrombosis",
+      "type": "Disease",
+      "standard_id": "MESH:D013927"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 33,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_-_MESH_D007249",
+    "head_entity": {
+      "name": "ROS",
+      "type": "Chemical",
+      "standard_id": "-"
+    },
+    "tail_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 17,
+    "confidence": 0.9999999995931155,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_NCBI_171_MESH_D007922",
+    "head_entity": {
+      "name": "Leptospira",
+      "type": "Species",
+      "standard_id": "NCBI:171"
+    },
+    "tail_entity": {
+      "name": "leptospirosis",
+      "type": "Disease",
+      "standard_id": "MESH:D007922"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 15,
+    "confidence": 0.999999999999919,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D028361_MESH_D010300",
+    "head_entity": {
+      "name": "oxidative",
+      "type": "Disease",
+      "standard_id": "MESH:D028361"
+    },
+    "tail_entity": {
+      "name": "Parkinson's disease",
+      "type": "Disease",
+      "standard_id": "MESH:D010300"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 57,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_NCBI_2697049_MESH_D007239",
+    "head_entity": {
+      "name": "SARS-CoV-2",
+      "type": "Species",
+      "standard_id": "NCBI:2697049"
+    },
+    "tail_entity": {
+      "name": "infections",
+      "type": "Disease",
+      "standard_id": "MESH:D007239"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 43,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_NCBI_6622_MESH_D019636",
+    "head_entity": {
+      "name": "alpha-syn",
+      "type": "Gene",
+      "standard_id": "NCBI:6622"
+    },
+    "tail_entity": {
+      "name": "neurodegeneration",
+      "type": "Disease",
+      "standard_id": "MESH:D019636"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 33,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_NCBI_11103_MESH_D006528",
+    "head_entity": {
+      "name": "Hepatitis C virus",
+      "type": "Species",
+      "standard_id": "NCBI:11103"
+    },
+    "tail_entity": {
+      "name": "hepatocellular carcinoma",
+      "type": "Disease",
+      "standard_id": "MESH:D006528"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 23,
+    "confidence": 0.999999999999938,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D000068879_MESH_D001171",
+    "head_entity": {
+      "name": "adalimumab",
+      "type": "Chemical",
+      "standard_id": "MESH:D000068879"
+    },
+    "tail_entity": {
+      "name": "juvenile idiopathic arthritis",
+      "type": "Disease",
+      "standard_id": "MESH:D001171"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 16,
+    "confidence": 0.9999999999851684,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D006528",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "hepatocellular carcinoma",
+      "type": "Disease",
+      "standard_id": "MESH:D006528"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 23,
+    "confidence": 0.9999999999999977,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_NCBI_351_MESH_D009410",
+    "head_entity": {
+      "name": "amyloid beta (Abeta) 42",
+      "type": "Gene",
+      "standard_id": "NCBI:351"
+    },
+    "tail_entity": {
+      "name": "neuronal loss",
+      "type": "Disease",
+      "standard_id": "MESH:D009410"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 29,
+    "confidence": 0.999999999999998,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D016642_MESH_D015208",
+    "head_entity": {
+      "name": "bupropion",
+      "type": "Chemical",
+      "standard_id": "MESH:D016642"
+    },
+    "tail_entity": {
+      "name": "smoking",
+      "type": "Disease",
+      "standard_id": "MESH:D015208"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 36,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D003324_MESH_D009203",
+    "head_entity": {
+      "name": "coronary artery disease",
+      "type": "Disease",
+      "standard_id": "MESH:D003324"
+    },
+    "tail_entity": {
+      "name": "myocardial infarction",
+      "type": "Disease",
+      "standard_id": "MESH:D009203"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 16,
+    "confidence": 0.9999999997046319,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_C510793_MESH_D010300",
+    "head_entity": {
+      "name": "Pimavanserin",
+      "type": "Chemical",
+      "standard_id": "MESH:C510793"
+    },
+    "tail_entity": {
+      "name": "Parkinson's disease",
+      "type": "Disease",
+      "standard_id": "MESH:D010300"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 18,
+    "confidence": 0.999999999999535,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D028361_MESH_D007333",
+    "head_entity": {
+      "name": "oxidative",
+      "type": "Disease",
+      "standard_id": "MESH:D028361"
+    },
+    "tail_entity": {
+      "name": "insulin resistance",
+      "type": "Disease",
+      "standard_id": "MESH:D007333"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 25,
+    "confidence": 0.9999999999990808,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_NCBI_2697049_MESH_D007249",
+    "head_entity": {
+      "name": "SARS-CoV-2",
+      "type": "Species",
+      "standard_id": "NCBI:2697049"
+    },
+    "tail_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 34,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D016559_MESH_D015433",
+    "head_entity": {
+      "name": "tacrolimus",
+      "type": "Chemical",
+      "standard_id": "MESH:D016559"
+    },
+    "tail_entity": {
+      "name": "impairment of cardiac membrane",
+      "type": "Disease",
+      "standard_id": "MESH:D015433"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 18,
+    "confidence": 0.9999999999999918,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_C020731_MESH_D016063",
+    "head_entity": {
+      "name": "Carbetocin",
+      "type": "Chemical",
+      "standard_id": "MESH:C020731"
+    },
+    "tail_entity": {
+      "name": "blood loss",
+      "type": "Disease",
+      "standard_id": "MESH:D016063"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 17,
+    "confidence": 0.9999999999999998,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D007249_MESH_D010300",
+    "head_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "tail_entity": {
+      "name": "Parkinson's disease",
+      "type": "Disease",
+      "standard_id": "MESH:D010300"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 21,
+    "confidence": 0.999999999925898,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_C578989_MESH_D009103",
+    "head_entity": {
+      "name": "siponimod",
+      "type": "Chemical",
+      "standard_id": "MESH:C578989"
+    },
+    "tail_entity": {
+      "name": "multiple sclerosis",
+      "type": "Disease",
+      "standard_id": "MESH:D009103"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 35,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D019386_MESH_D010024",
+    "head_entity": {
+      "name": "alendronate",
+      "type": "Chemical",
+      "standard_id": "MESH:D019386"
+    },
+    "tail_entity": {
+      "name": "osteoporosis",
+      "type": "Disease",
+      "standard_id": "MESH:D010024"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 29,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D008055_MESH_D002318",
+    "head_entity": {
+      "name": "Lipid",
+      "type": "Chemical",
+      "standard_id": "MESH:D008055"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 18,
+    "confidence": 0.9999999999997343,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D000068736_MESH_D020370",
+    "head_entity": {
+      "name": "duloxetine",
+      "type": "Chemical",
+      "standard_id": "MESH:D000068736"
+    },
+    "tail_entity": {
+      "name": "knee osteoarthritis",
+      "type": "Disease",
+      "standard_id": "MESH:D020370"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 25,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D000086382_MESH_D001007",
+    "head_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "tail_entity": {
+      "name": "anxiety",
+      "type": "Disease",
+      "standard_id": "MESH:D001007"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 38,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D009765_MESH_D003643",
+    "head_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "tail_entity": {
+      "name": "death",
+      "type": "Disease",
+      "standard_id": "MESH:D003643"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 20,
+    "confidence": 0.9999999999966647,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D017374_MESH_D013313",
+    "head_entity": {
+      "name": "Paroxetine",
+      "type": "Chemical",
+      "standard_id": "MESH:D017374"
+    },
+    "tail_entity": {
+      "name": "posttraumatic epilepsy",
+      "type": "Disease",
+      "standard_id": "MESH:D013313"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 23,
+    "confidence": 0.9999999999999994,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D065626_MESH_D005355",
+    "head_entity": {
+      "name": "nonalcoholic fatty liver disease",
+      "type": "Disease",
+      "standard_id": "MESH:D065626"
+    },
+    "tail_entity": {
+      "name": "cirrhosis",
+      "type": "Disease",
+      "standard_id": "MESH:D005355"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 47,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D015431_MESH_D006973",
+    "head_entity": {
+      "name": "weight loss",
+      "type": "Disease",
+      "standard_id": "MESH:D015431"
+    },
+    "tail_entity": {
+      "name": "High Blood Pressure",
+      "type": "Disease",
+      "standard_id": "MESH:D006973"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 28,
+    "confidence": 0.9999999999999998,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_C000711968_MESH_D000086382",
+    "head_entity": {
+      "name": "etesevimab",
+      "type": "Chemical",
+      "standard_id": "MESH:C000711968"
+    },
+    "tail_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 17,
+    "confidence": 0.9999999999999983,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_C578989_MESH_D020528",
+    "head_entity": {
+      "name": "siponimod",
+      "type": "Chemical",
+      "standard_id": "MESH:C578989"
+    },
+    "tail_entity": {
+      "name": "PMS",
+      "type": "Disease",
+      "standard_id": "MESH:D020528"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 25,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_NCBI_10566_MESH_D009959",
+    "head_entity": {
+      "name": "Human Papillomavirus",
+      "type": "Species",
+      "standard_id": "NCBI:10566"
+    },
+    "tail_entity": {
+      "name": "oropharyngeal cancer",
+      "type": "Disease",
+      "standard_id": "MESH:D009959"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 25,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D006331_MESH_D006976",
+    "head_entity": {
+      "name": "Cardiac involvement",
+      "type": "Disease",
+      "standard_id": "MESH:D006331"
+    },
+    "tail_entity": {
+      "name": "pulmonary hypertension",
+      "type": "Disease",
+      "standard_id": "MESH:D006976"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 17,
+    "confidence": 0.9999999968100254,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D015431_MESH_D001847",
+    "head_entity": {
+      "name": "weight loss",
+      "type": "Disease",
+      "standard_id": "MESH:D015431"
+    },
+    "tail_entity": {
+      "name": "bone loss",
+      "type": "Disease",
+      "standard_id": "MESH:D001847"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 15,
+    "confidence": 0.9999999910298828,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D002561_MESH_D003072",
+    "head_entity": {
+      "name": "Vascular dysfunction",
+      "type": "Disease",
+      "standard_id": "MESH:D002561"
+    },
+    "tail_entity": {
+      "name": "cognitive impairment",
+      "type": "Disease",
+      "standard_id": "MESH:D003072"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 16,
+    "confidence": 0.9999999991496944,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D001714",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "Bipolar Disorder",
+      "type": "Disease",
+      "standard_id": "MESH:D001714"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 29,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D015431_MESH_D002318",
+    "head_entity": {
+      "name": "weight loss",
+      "type": "Disease",
+      "standard_id": "MESH:D015431"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 19,
+    "confidence": 0.9999999999316435,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D007249_MESH_D050197",
+    "head_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "tail_entity": {
+      "name": "atherosclerosis",
+      "type": "Disease",
+      "standard_id": "MESH:D050197"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 163,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D014807_MESH_D010024",
+    "head_entity": {
+      "name": "vitamin D",
+      "type": "Chemical",
+      "standard_id": "MESH:D014807"
+    },
+    "tail_entity": {
+      "name": "osteoporosis",
+      "type": "Disease",
+      "standard_id": "MESH:D010024"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 23,
+    "confidence": 0.9999999999997022,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D000068580_MESH_D015208",
+    "head_entity": {
+      "name": "varenicline",
+      "type": "Chemical",
+      "standard_id": "MESH:D000068580"
+    },
+    "tail_entity": {
+      "name": "smoking",
+      "type": "Disease",
+      "standard_id": "MESH:D015208"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 24,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_NCBI_10912_MESH_D012400",
+    "head_entity": {
+      "name": "rotavirus",
+      "type": "Species",
+      "standard_id": "NCBI:10912"
+    },
+    "tail_entity": {
+      "name": "rotavirus disease",
+      "type": "Disease",
+      "standard_id": "MESH:D012400"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 38,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_NCBI_2629_MESH_D010300",
+    "head_entity": {
+      "name": "GBA",
+      "type": "Gene",
+      "standard_id": "NCBI:2629"
+    },
+    "tail_entity": {
+      "name": "Parkinson's disease",
+      "type": "Disease",
+      "standard_id": "MESH:D010300"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 27,
+    "confidence": 0.999999999999993,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg__MESH_D007239",
+    "head_entity": {
+      "name": "atherothrombosis",
+      "type": "Disease",
+      "standard_id": ""
+    },
+    "tail_entity": {
+      "name": "infections",
+      "type": "Disease",
+      "standard_id": "MESH:D007239"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 17,
+    "confidence": 0.9999999990885787,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D014807_MESH_D002318",
+    "head_entity": {
+      "name": "vitamin D",
+      "type": "Chemical",
+      "standard_id": "MESH:D014807"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "NoEffect",
+    "ground_truth": "NoEffect",
+    "evidence_count": 19,
+    "confidence": 0.9999999999999729,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D011562_MESH_D003866",
+    "head_entity": {
+      "name": "psilocybin",
+      "type": "Chemical",
+      "standard_id": "MESH:D011562"
+    },
+    "tail_entity": {
+      "name": "depression",
+      "type": "Disease",
+      "standard_id": "MESH:D003866"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 22,
+    "confidence": 0.9999999999999993,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D014807_MESH_D007333",
+    "head_entity": {
+      "name": "vitamin D",
+      "type": "Chemical",
+      "standard_id": "MESH:D014807"
+    },
+    "tail_entity": {
+      "name": "insulin resistance",
+      "type": "Disease",
+      "standard_id": "MESH:D007333"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 21,
+    "confidence": 0.9999999999999992,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D009765_MESH_D007674",
+    "head_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "tail_entity": {
+      "name": "kidney disease",
+      "type": "Disease",
+      "standard_id": "MESH:D007674"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 26,
+    "confidence": 0.999999999999982,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D017963_MESH_D029424",
+    "head_entity": {
+      "name": "Azithromycin",
+      "type": "Chemical",
+      "standard_id": "MESH:D017963"
+    },
+    "tail_entity": {
+      "name": "chronic obstructive pulmonary disease",
+      "type": "Disease",
+      "standard_id": "MESH:D029424"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 23,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D002118_MESH_D010024",
+    "head_entity": {
+      "name": "calcium",
+      "type": "Chemical",
+      "standard_id": "MESH:D002118"
+    },
+    "tail_entity": {
+      "name": "osteoporosis",
+      "type": "Disease",
+      "standard_id": "MESH:D010024"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 32,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D009369",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "Cancer",
+      "type": "Disease",
+      "standard_id": "MESH:D009369"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 19,
+    "confidence": 0.9999999999992308,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D000069455_MESH_D018357",
+    "head_entity": {
+      "name": "palivizumab",
+      "type": "Chemical",
+      "standard_id": "MESH:D000069455"
+    },
+    "tail_entity": {
+      "name": "RSV infection",
+      "type": "Disease",
+      "standard_id": "MESH:D018357"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 76,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D050197_MESH_D058729",
+    "head_entity": {
+      "name": "atherosclerosis",
+      "type": "Disease",
+      "standard_id": "MESH:D050197"
+    },
+    "tail_entity": {
+      "name": "peripheral artery disease",
+      "type": "Disease",
+      "standard_id": "MESH:D058729"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 16,
+    "confidence": 0.9999999910717912,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D000086382_MESH_D007239",
+    "head_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "tail_entity": {
+      "name": "infections",
+      "type": "Disease",
+      "standard_id": "MESH:D007239"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 41,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D000068180_MESH_D001714",
+    "head_entity": {
+      "name": "aripiprazole",
+      "type": "Chemical",
+      "standard_id": "MESH:D000068180"
+    },
+    "tail_entity": {
+      "name": "Bipolar Disorder",
+      "type": "Disease",
+      "standard_id": "MESH:D001714"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 30,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D009538_MESH_D015208",
+    "head_entity": {
+      "name": "nicotine",
+      "type": "Chemical",
+      "standard_id": "MESH:D009538"
+    },
+    "tail_entity": {
+      "name": "smoking",
+      "type": "Disease",
+      "standard_id": "MESH:D015208"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 22,
+    "confidence": 0.9999999999999998,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D006333",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "heart failure",
+      "type": "Disease",
+      "standard_id": "MESH:D006333"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 117,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D009765_MESH_D006331",
+    "head_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "tail_entity": {
+      "name": "Cardiac involvement",
+      "type": "Disease",
+      "standard_id": "MESH:D006331"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 16,
+    "confidence": 0.9999999893667513,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D016642_MESH_D009765",
+    "head_entity": {
+      "name": "bupropion",
+      "type": "Chemical",
+      "standard_id": "MESH:D016642"
+    },
+    "tail_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 16,
+    "confidence": 0.9999999999848062,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D054556",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "venous thromboembolism",
+      "type": "Disease",
+      "standard_id": "MESH:D054556"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 30,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D018943_MESH_D066126",
+    "head_entity": {
+      "name": "anthracycline",
+      "type": "Chemical",
+      "standard_id": "MESH:D018943"
+    },
+    "tail_entity": {
+      "name": "cardiotoxicity",
+      "type": "Disease",
+      "standard_id": "MESH:D066126"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 52,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D015431_MESH_D065626",
+    "head_entity": {
+      "name": "weight loss",
+      "type": "Disease",
+      "standard_id": "MESH:D015431"
+    },
+    "tail_entity": {
+      "name": "nonalcoholic fatty liver disease",
+      "type": "Disease",
+      "standard_id": "MESH:D065626"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 27,
+    "confidence": 0.9999999999999837,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D016559_MESH_D009404",
+    "head_entity": {
+      "name": "tacrolimus",
+      "type": "Chemical",
+      "standard_id": "MESH:D016559"
+    },
+    "tail_entity": {
+      "name": "Nephrotic Syndrome",
+      "type": "Disease",
+      "standard_id": "MESH:D009404"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 24,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D007249_MESH_D014652",
+    "head_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "tail_entity": {
+      "name": "endothelial dysfunction",
+      "type": "Disease",
+      "standard_id": "MESH:D014652"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 33,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D003920_MESH_D002318",
+    "head_entity": {
+      "name": "uncontrolled diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003920"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 68,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D020521_MESH_D003866",
+    "head_entity": {
+      "name": "stroke",
+      "type": "Disease",
+      "standard_id": "MESH:D020521"
+    },
+    "tail_entity": {
+      "name": "depression",
+      "type": "Disease",
+      "standard_id": "MESH:D003866"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 18,
+    "confidence": 0.9999999999873413,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D015431_MESH_D009765",
+    "head_entity": {
+      "name": "weight loss",
+      "type": "Disease",
+      "standard_id": "MESH:D015431"
+    },
+    "tail_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 21,
+    "confidence": 0.9999999999999253,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D009203_MESH_D006333",
+    "head_entity": {
+      "name": "myocardial infarction",
+      "type": "Disease",
+      "standard_id": "MESH:D009203"
+    },
+    "tail_entity": {
+      "name": "heart failure",
+      "type": "Disease",
+      "standard_id": "MESH:D006333"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 62,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D000077213_MESH_D001714",
+    "head_entity": {
+      "name": "lamotrigine",
+      "type": "Chemical",
+      "standard_id": "MESH:D000077213"
+    },
+    "tail_entity": {
+      "name": "Bipolar Disorder",
+      "type": "Disease",
+      "standard_id": "MESH:D001714"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 19,
+    "confidence": 0.9999999999997907,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D049971_MESH_D006973",
+    "head_entity": {
+      "name": "thiazide",
+      "type": "Chemical",
+      "standard_id": "MESH:D049971"
+    },
+    "tail_entity": {
+      "name": "High Blood Pressure",
+      "type": "Disease",
+      "standard_id": "MESH:D006973"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 26,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_NCBI_10566_MESH_D009369",
+    "head_entity": {
+      "name": "Human Papillomavirus",
+      "type": "Species",
+      "standard_id": "NCBI:10566"
+    },
+    "tail_entity": {
+      "name": "Cancer",
+      "type": "Disease",
+      "standard_id": "MESH:D009369"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 16,
+    "confidence": 0.9999999998320384,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D016640_MESH_D002318",
+    "head_entity": {
+      "name": "Gestational Diabetes Mellitus",
+      "type": "Disease",
+      "standard_id": "MESH:D016640"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 17,
+    "confidence": 0.9999999992187817,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_-_MESH_D000086382",
+    "head_entity": {
+      "name": "ROS",
+      "type": "Chemical",
+      "standard_id": "-"
+    },
+    "tail_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 26,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D009765_MESH_D050197",
+    "head_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "tail_entity": {
+      "name": "atherosclerosis",
+      "type": "Disease",
+      "standard_id": "MESH:D050197"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 31,
+    "confidence": 0.9999999999999999,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D006973_MESH_D002318",
+    "head_entity": {
+      "name": "High Blood Pressure",
+      "type": "Disease",
+      "standard_id": "MESH:D006973"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 151,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D003866",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "depression",
+      "type": "Disease",
+      "standard_id": "MESH:D003866"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 109,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_C570240_MESH_D002318",
+    "head_entity": {
+      "name": "empagliflozin",
+      "type": "Chemical",
+      "standard_id": "MESH:C570240"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 24,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D009765_MESH_D014652",
+    "head_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "tail_entity": {
+      "name": "endothelial dysfunction",
+      "type": "Disease",
+      "standard_id": "MESH:D014652"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 15,
+    "confidence": 0.999999915984208,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D000068258_MESH_D000077216",
+    "head_entity": {
+      "name": "Bevacizumab",
+      "type": "Chemical",
+      "standard_id": "MESH:D000068258"
+    },
+    "tail_entity": {
+      "name": "epithelial ovarian cancers",
+      "type": "Disease",
+      "standard_id": "MESH:D000077216"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 38,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D000086382_MESH_D001145",
+    "head_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "tail_entity": {
+      "name": "cardiac arrhythmias",
+      "type": "Disease",
+      "standard_id": "MESH:D001145"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 16,
+    "confidence": 0.9999999858223351,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D015208_MESH_D003643",
+    "head_entity": {
+      "name": "smoking",
+      "type": "Disease",
+      "standard_id": "MESH:D015208"
+    },
+    "tail_entity": {
+      "name": "death",
+      "type": "Disease",
+      "standard_id": "MESH:D003643"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 28,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D006495_MESH_D054556",
+    "head_entity": {
+      "name": "low-molecular-weight heparin",
+      "type": "Chemical",
+      "standard_id": "MESH:D006495"
+    },
+    "tail_entity": {
+      "name": "venous thromboembolism",
+      "type": "Disease",
+      "standard_id": "MESH:D054556"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 30,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D005230_MESH_D007333",
+    "head_entity": {
+      "name": "free fatty acids",
+      "type": "Chemical",
+      "standard_id": "MESH:D005230"
+    },
+    "tail_entity": {
+      "name": "insulin resistance",
+      "type": "Disease",
+      "standard_id": "MESH:D007333"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 16,
+    "confidence": 0.9999999949778825,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D006973_MESH_D050197",
+    "head_entity": {
+      "name": "High Blood Pressure",
+      "type": "Disease",
+      "standard_id": "MESH:D006973"
+    },
+    "tail_entity": {
+      "name": "atherosclerosis",
+      "type": "Disease",
+      "standard_id": "MESH:D050197"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 18,
+    "confidence": 0.9999999996200829,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D002544",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "cerebral infarction",
+      "type": "Disease",
+      "standard_id": "MESH:D002544"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 18,
+    "confidence": 0.9999999999999984,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_NCBI_59272_MESH_D000086382",
+    "head_entity": {
+      "name": "angiotensin-converting enzyme 2",
+      "type": "Gene",
+      "standard_id": "NCBI:59272"
+    },
+    "tail_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 54,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D000086382_MESH_D009205",
+    "head_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "tail_entity": {
+      "name": "myocarditis",
+      "type": "Disease",
+      "standard_id": "MESH:D009205"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 30,
+    "confidence": 0.9999999999999997,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D050197_MESH_D002318",
+    "head_entity": {
+      "name": "atherosclerosis",
+      "type": "Disease",
+      "standard_id": "MESH:D050197"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 71,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D008094_MESH_D001714",
+    "head_entity": {
+      "name": "lithium",
+      "type": "Chemical",
+      "standard_id": "MESH:D008094"
+    },
+    "tail_entity": {
+      "name": "Bipolar Disorder",
+      "type": "Disease",
+      "standard_id": "MESH:D001714"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 90,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D012492_MESH_D006973",
+    "head_entity": {
+      "name": "salt",
+      "type": "Chemical",
+      "standard_id": "MESH:D012492"
+    },
+    "tail_entity": {
+      "name": "High Blood Pressure",
+      "type": "Disease",
+      "standard_id": "MESH:D006973"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 56,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D013313",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "posttraumatic epilepsy",
+      "type": "Disease",
+      "standard_id": "MESH:D013313"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 17,
+    "confidence": 0.9999999998564781,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_NCBI_9606_MESH_D001007",
+    "head_entity": {
+      "name": "human",
+      "type": "Species",
+      "standard_id": "NCBI:9606"
+    },
+    "tail_entity": {
+      "name": "anxiety",
+      "type": "Disease",
+      "standard_id": "MESH:D001007"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 37,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D000090862_MESH_D010300",
+    "head_entity": {
+      "name": "neuroinflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D000090862"
+    },
+    "tail_entity": {
+      "name": "Parkinson's disease",
+      "type": "Disease",
+      "standard_id": "MESH:D010300"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 26,
+    "confidence": 0.9999999999997186,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D019379_MESH_C535781",
+    "head_entity": {
+      "name": "Teriparatide",
+      "type": "Chemical",
+      "standard_id": "MESH:D019379"
+    },
+    "tail_entity": {
+      "name": "vertebral fractures",
+      "type": "Disease",
+      "standard_id": "MESH:C535781"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 19,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D000086382_MESH_D012128",
+    "head_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "tail_entity": {
+      "name": "respiratory distress",
+      "type": "Disease",
+      "standard_id": "MESH:D012128"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 95,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D000068876_MESH_D009103",
+    "head_entity": {
+      "name": "FINGOLIMOD",
+      "type": "Chemical",
+      "standard_id": "MESH:D000068876"
+    },
+    "tail_entity": {
+      "name": "multiple sclerosis",
+      "type": "Disease",
+      "standard_id": "MESH:D009103"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 25,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_NCBI_6622_MESH_D009410",
+    "head_entity": {
+      "name": "alpha-syn",
+      "type": "Gene",
+      "standard_id": "NCBI:6622"
+    },
+    "tail_entity": {
+      "name": "neuronal loss",
+      "type": "Disease",
+      "standard_id": "MESH:D009410"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 29,
+    "confidence": 0.9999999999999947,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D000086382",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 40,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D005355_MESH_D006333",
+    "head_entity": {
+      "name": "cirrhosis",
+      "type": "Disease",
+      "standard_id": "MESH:D005355"
+    },
+    "tail_entity": {
+      "name": "heart failure",
+      "type": "Disease",
+      "standard_id": "MESH:D006333"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 16,
+    "confidence": 0.9999999875945432,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D007249_MESH_D002318",
+    "head_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 91,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D000068580_MESH_D014029",
+    "head_entity": {
+      "name": "varenicline",
+      "type": "Chemical",
+      "standard_id": "MESH:D000068580"
+    },
+    "tail_entity": {
+      "name": "tobacco",
+      "type": "Disease",
+      "standard_id": "MESH:D014029"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 18,
+    "confidence": 0.9999999999994897,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D000086382_MESH_D000080424",
+    "head_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "tail_entity": {
+      "name": "inflammatory cytokines",
+      "type": "Disease",
+      "standard_id": "MESH:D000080424"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 27,
+    "confidence": 0.9999999999999849,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D000078764_MESH_D005356",
+    "head_entity": {
+      "name": "Milnacipran",
+      "type": "Chemical",
+      "standard_id": "MESH:D000078764"
+    },
+    "tail_entity": {
+      "name": "FMS-related symptoms",
+      "type": "Disease",
+      "standard_id": "MESH:D005356"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 28,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D000086382_MESH_D000094024",
+    "head_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "tail_entity": {
+      "name": "Sars-CoV-2 infection",
+      "type": "Disease",
+      "standard_id": "MESH:D000094024"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 22,
+    "confidence": 0.9999999999999835,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D009765_MESH_D024821",
+    "head_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "tail_entity": {
+      "name": "cardiometabolic disease",
+      "type": "Disease",
+      "standard_id": "MESH:D024821"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 66,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D009765_MESH_D050171",
+    "head_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "tail_entity": {
+      "name": "dyslipidemia",
+      "type": "Disease",
+      "standard_id": "MESH:D050171"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 30,
+    "confidence": 0.9999999999999991,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_C024989_MESH_D006333",
+    "head_entity": {
+      "name": "Coenzyme Q10",
+      "type": "Chemical",
+      "standard_id": "MESH:C024989"
+    },
+    "tail_entity": {
+      "name": "heart failure",
+      "type": "Disease",
+      "standard_id": "MESH:D006333"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 65,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D065626_MESH_D006528",
+    "head_entity": {
+      "name": "nonalcoholic fatty liver disease",
+      "type": "Disease",
+      "standard_id": "MESH:D065626"
+    },
+    "tail_entity": {
+      "name": "hepatocellular carcinoma",
+      "type": "Disease",
+      "standard_id": "MESH:D006528"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 93,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_NCBI_43740568_MESH_D000086382",
+    "head_entity": {
+      "name": "S",
+      "type": "Gene",
+      "standard_id": "NCBI:43740568"
+    },
+    "tail_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 20,
+    "confidence": 0.9999999999034729,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_C538724_MESH_D002280",
+    "head_entity": {
+      "name": "vismodegib",
+      "type": "Chemical",
+      "standard_id": "MESH:C538724"
+    },
+    "tail_entity": {
+      "name": "renal cell injury",
+      "type": "Disease",
+      "standard_id": "MESH:D002280"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 16,
+    "confidence": 0.9999999980868124,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D000086382_MESH_D009202",
+    "head_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "tail_entity": {
+      "name": "cardiomyopathies",
+      "type": "Disease",
+      "standard_id": "MESH:D009202"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 26,
+    "confidence": 0.9999999999998614,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D002118_MESH_D001847",
+    "head_entity": {
+      "name": "calcium",
+      "type": "Chemical",
+      "standard_id": "MESH:D002118"
+    },
+    "tail_entity": {
+      "name": "bone loss",
+      "type": "Disease",
+      "standard_id": "MESH:D001847"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 31,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D000068258_MESH_D010051",
+    "head_entity": {
+      "name": "Bevacizumab",
+      "type": "Chemical",
+      "standard_id": "MESH:D000068258"
+    },
+    "tail_entity": {
+      "name": "ovarian cancer",
+      "type": "Disease",
+      "standard_id": "MESH:D010051"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 46,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D000086382_MESH_D006331",
+    "head_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "tail_entity": {
+      "name": "Cardiac involvement",
+      "type": "Disease",
+      "standard_id": "MESH:D006331"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 20,
+    "confidence": 0.9999999999401631,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_NCBI_3630_MESH_D003924",
+    "head_entity": {
+      "name": "insulin",
+      "type": "Gene",
+      "standard_id": "NCBI:3630"
+    },
+    "tail_entity": {
+      "name": "type 2 diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003924"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 17,
+    "confidence": 0.9999999999999563,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_NCBI_2641_MESH_D003924",
+    "head_entity": {
+      "name": "glucagon-like peptide 1",
+      "type": "Gene",
+      "standard_id": "NCBI:2641"
+    },
+    "tail_entity": {
+      "name": "type 2 diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003924"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 15,
+    "confidence": 0.9999999993849062,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_NCBI_4790_MESH_D007249",
+    "head_entity": {
+      "name": "NF-kappaB",
+      "type": "Gene",
+      "standard_id": "NCBI:4790"
+    },
+    "tail_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "kg_relation_type": "Stimulate",
+    "ground_truth": "Harmful",
+    "evidence_count": 17,
+    "confidence": 0.999999996278363,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D002318_MESH_D003643",
+    "head_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "tail_entity": {
+      "name": "death",
+      "type": "Disease",
+      "standard_id": "MESH:D003643"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 40,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D000069348_MESH_D001714",
+    "head_entity": {
+      "name": "quetiapine",
+      "type": "Chemical",
+      "standard_id": "MESH:D000069348"
+    },
+    "tail_entity": {
+      "name": "Bipolar Disorder",
+      "type": "Disease",
+      "standard_id": "MESH:D001714"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 35,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D001007",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "anxiety",
+      "type": "Disease",
+      "standard_id": "MESH:D001007"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 16,
+    "confidence": 0.9999999978633679,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D007649_MESH_D001714",
+    "head_entity": {
+      "name": "Ketamine",
+      "type": "Chemical",
+      "standard_id": "MESH:D007649"
+    },
+    "tail_entity": {
+      "name": "Bipolar Disorder",
+      "type": "Disease",
+      "standard_id": "MESH:D001714"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 44,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_NCBI_2740_MESH_D020521",
+    "head_entity": {
+      "name": "glucagon-like peptide-1 receptor",
+      "type": "Gene",
+      "standard_id": "NCBI:2740"
+    },
+    "tail_entity": {
+      "name": "stroke",
+      "type": "Disease",
+      "standard_id": "MESH:D020521"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 21,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_NCBI_10566_MESH_D002583",
+    "head_entity": {
+      "name": "Human Papillomavirus",
+      "type": "Species",
+      "standard_id": "NCBI:10566"
+    },
+    "tail_entity": {
+      "name": "cervical cancer",
+      "type": "Disease",
+      "standard_id": "MESH:D002583"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 96,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_NCBI_6622_MESH_D020961",
+    "head_entity": {
+      "name": "alpha-syn",
+      "type": "Gene",
+      "standard_id": "NCBI:6622"
+    },
+    "tail_entity": {
+      "name": "dementia with Lewy bodies",
+      "type": "Disease",
+      "standard_id": "MESH:D020961"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 21,
+    "confidence": 0.9999999999692267,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D008687_MESH_D007333",
+    "head_entity": {
+      "name": "metformin",
+      "type": "Chemical",
+      "standard_id": "MESH:D008687"
+    },
+    "tail_entity": {
+      "name": "insulin resistance",
+      "type": "Disease",
+      "standard_id": "MESH:D007333"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 23,
+    "confidence": 0.9999999999980621,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D002318",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 89,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_NCBI_4018_MESH_D050197",
+    "head_entity": {
+      "name": "Lipoprotein(a)",
+      "type": "Gene",
+      "standard_id": "NCBI:4018"
+    },
+    "tail_entity": {
+      "name": "atherosclerosis",
+      "type": "Disease",
+      "standard_id": "MESH:D050197"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 45,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D051436",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "chronic kidney disease",
+      "type": "Disease",
+      "standard_id": "MESH:D051436"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 36,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_NCBI_2697049_MESH_D003643",
+    "head_entity": {
+      "name": "SARS-CoV-2",
+      "type": "Species",
+      "standard_id": "NCBI:2697049"
+    },
+    "tail_entity": {
+      "name": "death",
+      "type": "Disease",
+      "standard_id": "MESH:D003643"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 20,
+    "confidence": 0.9999999999744802,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D018205_MESH_D007333",
+    "head_entity": {
+      "name": "osteosarcopenic adiposity (OSA) syndrome",
+      "type": "Disease",
+      "standard_id": "MESH:D018205"
+    },
+    "tail_entity": {
+      "name": "insulin resistance",
+      "type": "Disease",
+      "standard_id": "MESH:D007333"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 26,
+    "confidence": 0.9999999999997845,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D008687_MESH_D003924",
+    "head_entity": {
+      "name": "metformin",
+      "type": "Chemical",
+      "standard_id": "MESH:D008687"
+    },
+    "tail_entity": {
+      "name": "type 2 diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003924"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 38,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D001281_MESH_D020521",
+    "head_entity": {
+      "name": "atrial fibrillation",
+      "type": "Disease",
+      "standard_id": "MESH:D001281"
+    },
+    "tail_entity": {
+      "name": "stroke",
+      "type": "Disease",
+      "standard_id": "MESH:D020521"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 21,
+    "confidence": 0.9999999999998243,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_C522181_MESH_D054556",
+    "head_entity": {
+      "name": "apixaban",
+      "type": "Chemical",
+      "standard_id": "MESH:C522181"
+    },
+    "tail_entity": {
+      "name": "venous thromboembolism",
+      "type": "Disease",
+      "standard_id": "MESH:D054556"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 31,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_NCBI_65018_MESH_D010300",
+    "head_entity": {
+      "name": "PTEN-induced putative kinase 1",
+      "type": "Gene",
+      "standard_id": "NCBI:65018"
+    },
+    "tail_entity": {
+      "name": "Parkinson's disease",
+      "type": "Disease",
+      "standard_id": "MESH:D010300"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 41,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D000078784_MESH_D003865",
+    "head_entity": {
+      "name": "Vortioxetine",
+      "type": "Chemical",
+      "standard_id": "MESH:D000078784"
+    },
+    "tail_entity": {
+      "name": "Major Depressive Disorder",
+      "type": "Disease",
+      "standard_id": "MESH:D003865"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 16,
+    "confidence": 0.9999999999999595,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D014435",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "typhoid fever",
+      "type": "Disease",
+      "standard_id": "MESH:D014435"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 16,
+    "confidence": 0.9999999999996173,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D016640_MESH_D003924",
+    "head_entity": {
+      "name": "Gestational Diabetes Mellitus",
+      "type": "Disease",
+      "standard_id": "MESH:D016640"
+    },
+    "tail_entity": {
+      "name": "type 2 diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003924"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 22,
+    "confidence": 0.999999999999625,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D006509_MESH_D006528",
+    "head_entity": {
+      "name": "HBV infection",
+      "type": "Disease",
+      "standard_id": "MESH:D006509"
+    },
+    "tail_entity": {
+      "name": "hepatocellular carcinoma",
+      "type": "Disease",
+      "standard_id": "MESH:D006528"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 47,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D006973_MESH_D006333",
+    "head_entity": {
+      "name": "High Blood Pressure",
+      "type": "Disease",
+      "standard_id": "MESH:D006973"
+    },
+    "tail_entity": {
+      "name": "heart failure",
+      "type": "Disease",
+      "standard_id": "MESH:D006333"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 80,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D064806_MESH_D007249",
+    "head_entity": {
+      "name": "gut dysbiosis",
+      "type": "Disease",
+      "standard_id": "MESH:D064806"
+    },
+    "tail_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 20,
+    "confidence": 0.999999999756853,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D014810_MESH_D005235",
+    "head_entity": {
+      "name": "vitamin E",
+      "type": "Chemical",
+      "standard_id": "MESH:D014810"
+    },
+    "tail_entity": {
+      "name": "non-alcoholic steatohepatitis",
+      "type": "Disease",
+      "standard_id": "MESH:D005235"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 16,
+    "confidence": 0.9999999986813928,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D007333_MESH_D003920",
+    "head_entity": {
+      "name": "insulin resistance",
+      "type": "Disease",
+      "standard_id": "MESH:D007333"
+    },
+    "tail_entity": {
+      "name": "uncontrolled diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003920"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 23,
+    "confidence": 0.9999999999978898,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D000093542_MESH_D001749",
+    "head_entity": {
+      "name": "Gemcitabine",
+      "type": "Chemical",
+      "standard_id": "MESH:D000093542"
+    },
+    "tail_entity": {
+      "name": "bladder cancer",
+      "type": "Disease",
+      "standard_id": "MESH:D001749"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 23,
+    "confidence": 0.9999999999999998,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg__MESH_D013313",
+    "head_entity": {
+      "name": "atherothrombosis",
+      "type": "Disease",
+      "standard_id": ""
+    },
+    "tail_entity": {
+      "name": "posttraumatic epilepsy",
+      "type": "Disease",
+      "standard_id": "MESH:D013313"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 20,
+    "confidence": 0.9999999999930558,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_C533287_MESH_D001714",
+    "head_entity": {
+      "name": "cariprazine",
+      "type": "Chemical",
+      "standard_id": "MESH:C533287"
+    },
+    "tail_entity": {
+      "name": "Bipolar Disorder",
+      "type": "Disease",
+      "standard_id": "MESH:D001714"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 26,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D020280_MESH_D013313",
+    "head_entity": {
+      "name": "sertraline",
+      "type": "Chemical",
+      "standard_id": "MESH:D020280"
+    },
+    "tail_entity": {
+      "name": "posttraumatic epilepsy",
+      "type": "Disease",
+      "standard_id": "MESH:D013313"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 25,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D007333_",
+    "head_entity": {
+      "name": "insulin resistance",
+      "type": "Disease",
+      "standard_id": "MESH:D007333"
+    },
+    "tail_entity": {
+      "name": "atherothrombosis",
+      "type": "Disease",
+      "standard_id": ""
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 15,
+    "confidence": 0.999999917698816,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D000090862_MESH_D009410",
+    "head_entity": {
+      "name": "neuroinflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D000090862"
+    },
+    "tail_entity": {
+      "name": "neuronal loss",
+      "type": "Disease",
+      "standard_id": "MESH:D009410"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 16,
+    "confidence": 0.9999999803005941,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D015525_MESH_D003866",
+    "head_entity": {
+      "name": "omega-3 fatty acid",
+      "type": "Chemical",
+      "standard_id": "MESH:D015525"
+    },
+    "tail_entity": {
+      "name": "depression",
+      "type": "Disease",
+      "standard_id": "MESH:D003866"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 42,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D009765_MESH_D002318",
+    "head_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 158,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D005473_MESH_D003866",
+    "head_entity": {
+      "name": "fluoxetine",
+      "type": "Chemical",
+      "standard_id": "MESH:D005473"
+    },
+    "tail_entity": {
+      "name": "depression",
+      "type": "Disease",
+      "standard_id": "MESH:D003866"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 29,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D004318_MESH_D007922",
+    "head_entity": {
+      "name": "doxycycline",
+      "type": "Chemical",
+      "standard_id": "MESH:D004318"
+    },
+    "tail_entity": {
+      "name": "leptospirosis",
+      "type": "Disease",
+      "standard_id": "MESH:D007922"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 31,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D003928",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "diabetic nephropathy",
+      "type": "Disease",
+      "standard_id": "MESH:D003928"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 18,
+    "confidence": 0.9999999999980405,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D002118_MESH_D011225",
+    "head_entity": {
+      "name": "calcium",
+      "type": "Chemical",
+      "standard_id": "MESH:D002118"
+    },
+    "tail_entity": {
+      "name": "preeclampsia",
+      "type": "Disease",
+      "standard_id": "MESH:D011225"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 29,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D014635_MESH_D001714",
+    "head_entity": {
+      "name": "magnesium valproate",
+      "type": "Chemical",
+      "standard_id": "MESH:D014635"
+    },
+    "tail_entity": {
+      "name": "Bipolar Disorder",
+      "type": "Disease",
+      "standard_id": "MESH:D001714"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 26,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D019694_MESH_D006528",
+    "head_entity": {
+      "name": "chronic hepatitis B",
+      "type": "Disease",
+      "standard_id": "MESH:D019694"
+    },
+    "tail_entity": {
+      "name": "hepatocellular carcinoma",
+      "type": "Disease",
+      "standard_id": "MESH:D006528"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 35,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D007249_MESH_D013927",
+    "head_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "tail_entity": {
+      "name": "thrombosis",
+      "type": "Disease",
+      "standard_id": "MESH:D013927"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 18,
+    "confidence": 0.9999999964713367,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D000086382_MESH_D001778",
+    "head_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "tail_entity": {
+      "name": "coagulopathy",
+      "type": "Disease",
+      "standard_id": "MESH:D001778"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 23,
+    "confidence": 0.9999999999968348,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D004298_MESH_D010300",
+    "head_entity": {
+      "name": "dopamine",
+      "type": "Chemical",
+      "standard_id": "MESH:D004298"
+    },
+    "tail_entity": {
+      "name": "Parkinson's disease",
+      "type": "Disease",
+      "standard_id": "MESH:D010300"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 17,
+    "confidence": 0.9999999932459179,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_C020731_MESH_D006473",
+    "head_entity": {
+      "name": "Carbetocin",
+      "type": "Chemical",
+      "standard_id": "MESH:C020731"
+    },
+    "tail_entity": {
+      "name": "postpartum hemorrhage",
+      "type": "Disease",
+      "standard_id": "MESH:D006473"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 44,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D001241_MESH_D002318",
+    "head_entity": {
+      "name": "aspirin",
+      "type": "Chemical",
+      "standard_id": "MESH:D001241"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 36,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D020280_MESH_D003866",
+    "head_entity": {
+      "name": "sertraline",
+      "type": "Chemical",
+      "standard_id": "MESH:D020280"
+    },
+    "tail_entity": {
+      "name": "depression",
+      "type": "Disease",
+      "standard_id": "MESH:D003866"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 15,
+    "confidence": 0.9999999990431875,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D019386_MESH_C535781",
+    "head_entity": {
+      "name": "alendronate",
+      "type": "Chemical",
+      "standard_id": "MESH:D019386"
+    },
+    "tail_entity": {
+      "name": "vertebral fractures",
+      "type": "Disease",
+      "standard_id": "MESH:C535781"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 18,
+    "confidence": 0.9999999999999959,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D012400",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "rotavirus disease",
+      "type": "Disease",
+      "standard_id": "MESH:D012400"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 27,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D007649_MESH_D003866",
+    "head_entity": {
+      "name": "Ketamine",
+      "type": "Chemical",
+      "standard_id": "MESH:D007649"
+    },
+    "tail_entity": {
+      "name": "depression",
+      "type": "Disease",
+      "standard_id": "MESH:D003866"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 86,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_NCBI_2740_MESH_D002318",
+    "head_entity": {
+      "name": "glucagon-like peptide-1 receptor",
+      "type": "Gene",
+      "standard_id": "NCBI:2740"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 44,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D009369_MESH_D003643",
+    "head_entity": {
+      "name": "Cancer",
+      "type": "Disease",
+      "standard_id": "MESH:D009369"
+    },
+    "tail_entity": {
+      "name": "death",
+      "type": "Disease",
+      "standard_id": "MESH:D003643"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 16,
+    "confidence": 0.9999999993386512,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_NCBI_59272_MESH_D007239",
+    "head_entity": {
+      "name": "angiotensin-converting enzyme 2",
+      "type": "Gene",
+      "standard_id": "NCBI:59272"
+    },
+    "tail_entity": {
+      "name": "infections",
+      "type": "Disease",
+      "standard_id": "MESH:D007239"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 18,
+    "confidence": 0.999999999062538,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D000069552_MESH_D054556",
+    "head_entity": {
+      "name": "rivaroxaban",
+      "type": "Chemical",
+      "standard_id": "MESH:D000069552"
+    },
+    "tail_entity": {
+      "name": "venous thromboembolism",
+      "type": "Disease",
+      "standard_id": "MESH:D054556"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 24,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D013923",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "thromboembolism",
+      "type": "Disease",
+      "standard_id": "MESH:D013923"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 16,
+    "confidence": 0.9999999999980225,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_NCBI_1401_MESH_D007249",
+    "head_entity": {
+      "name": "C-reactive protein",
+      "type": "Gene",
+      "standard_id": "NCBI:1401"
+    },
+    "tail_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "kg_relation_type": "Stimulate",
+    "ground_truth": "Harmful",
+    "evidence_count": 18,
+    "confidence": 0.9999999999335422,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_C558899_MESH_D000086382",
+    "head_entity": {
+      "name": "Lopinavir/Ritonavir",
+      "type": "Chemical",
+      "standard_id": "MESH:C558899"
+    },
+    "tail_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "kg_relation_type": "NoEffect",
+    "ground_truth": "NoEffect",
+    "evidence_count": 28,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D009765_MESH_D006973",
+    "head_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "tail_entity": {
+      "name": "High Blood Pressure",
+      "type": "Disease",
+      "standard_id": "MESH:D006973"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 103,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D006973_MESH_D009203",
+    "head_entity": {
+      "name": "High Blood Pressure",
+      "type": "Disease",
+      "standard_id": "MESH:D006973"
+    },
+    "tail_entity": {
+      "name": "myocardial infarction",
+      "type": "Disease",
+      "standard_id": "MESH:D009203"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 26,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D000077205_MESH_D020521",
+    "head_entity": {
+      "name": "pioglitazone",
+      "type": "Chemical",
+      "standard_id": "MESH:D000077205"
+    },
+    "tail_entity": {
+      "name": "stroke",
+      "type": "Disease",
+      "standard_id": "MESH:D020521"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 24,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_C000629870_MESH_D003865",
+    "head_entity": {
+      "name": "ketamine",
+      "type": "Chemical",
+      "standard_id": "MESH:C000629870"
+    },
+    "tail_entity": {
+      "name": "Major Depressive Disorder",
+      "type": "Disease",
+      "standard_id": "MESH:D003865"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 44,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D024821_MESH_D003920",
+    "head_entity": {
+      "name": "cardiometabolic disease",
+      "type": "Disease",
+      "standard_id": "MESH:D024821"
+    },
+    "tail_entity": {
+      "name": "uncontrolled diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003920"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 19,
+    "confidence": 0.9999999999503781,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D007249_MESH_D024821",
+    "head_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "tail_entity": {
+      "name": "cardiometabolic disease",
+      "type": "Disease",
+      "standard_id": "MESH:D024821"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 35,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D007674",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "kidney disease",
+      "type": "Disease",
+      "standard_id": "MESH:D007674"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 21,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D007249_MESH_D003920",
+    "head_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "tail_entity": {
+      "name": "uncontrolled diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003920"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 19,
+    "confidence": 0.9999999995368629,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_C000711488_MESH_D000086382",
+    "head_entity": {
+      "name": "imdevimab",
+      "type": "Chemical",
+      "standard_id": "MESH:C000711488"
+    },
+    "tail_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 38,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D010645_MESH_D009765",
+    "head_entity": {
+      "name": "phentermine",
+      "type": "Chemical",
+      "standard_id": "MESH:D010645"
+    },
+    "tail_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 17,
+    "confidence": 0.9999999999863256,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D003920_MESH_D051436",
+    "head_entity": {
+      "name": "uncontrolled diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003920"
+    },
+    "tail_entity": {
+      "name": "chronic kidney disease",
+      "type": "Disease",
+      "standard_id": "MESH:D051436"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 21,
+    "confidence": 0.9999999999967858,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D006973_MESH_D007674",
+    "head_entity": {
+      "name": "High Blood Pressure",
+      "type": "Disease",
+      "standard_id": "MESH:D006973"
+    },
+    "tail_entity": {
+      "name": "kidney disease",
+      "type": "Disease",
+      "standard_id": "MESH:D007674"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 21,
+    "confidence": 0.9999999999687382,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D007249_MESH_D009410",
+    "head_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "tail_entity": {
+      "name": "neuronal loss",
+      "type": "Disease",
+      "standard_id": "MESH:D009410"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 16,
+    "confidence": 0.9999999711945856,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_NCBI_4137_MESH_D055956",
+    "head_entity": {
+      "name": "tau",
+      "type": "Gene",
+      "standard_id": "NCBI:4137"
+    },
+    "tail_entity": {
+      "name": "neurofibrillary tangles",
+      "type": "Disease",
+      "standard_id": "MESH:D055956"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 16,
+    "confidence": 0.9999999931643401,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D006973_MESH_D014652",
+    "head_entity": {
+      "name": "High Blood Pressure",
+      "type": "Disease",
+      "standard_id": "MESH:D006973"
+    },
+    "tail_entity": {
+      "name": "endothelial dysfunction",
+      "type": "Disease",
+      "standard_id": "MESH:D014652"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 15,
+    "confidence": 0.9999999586484773,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D007333_MESH_D002318",
+    "head_entity": {
+      "name": "insulin resistance",
+      "type": "Disease",
+      "standard_id": "MESH:D007333"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 23,
+    "confidence": 0.9999999999993617,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D012964_MESH_D006973",
+    "head_entity": {
+      "name": "sodium",
+      "type": "Chemical",
+      "standard_id": "MESH:D012964"
+    },
+    "tail_entity": {
+      "name": "High Blood Pressure",
+      "type": "Disease",
+      "standard_id": "MESH:D006973"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 23,
+    "confidence": 0.9999999999997802,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D050197_MESH_D009203",
+    "head_entity": {
+      "name": "atherosclerosis",
+      "type": "Disease",
+      "standard_id": "MESH:D050197"
+    },
+    "tail_entity": {
+      "name": "myocardial infarction",
+      "type": "Disease",
+      "standard_id": "MESH:D009203"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 33,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_NCBI_2697049_MESH_D000086382",
+    "head_entity": {
+      "name": "SARS-CoV-2",
+      "type": "Species",
+      "standard_id": "NCBI:2697049"
+    },
+    "tail_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 1029,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D013927",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "thrombosis",
+      "type": "Disease",
+      "standard_id": "MESH:D013927"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 15,
+    "confidence": 0.9999999999114063,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D024821_MESH_D065626",
+    "head_entity": {
+      "name": "cardiometabolic disease",
+      "type": "Disease",
+      "standard_id": "MESH:D024821"
+    },
+    "tail_entity": {
+      "name": "nonalcoholic fatty liver disease",
+      "type": "Disease",
+      "standard_id": "MESH:D065626"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 21,
+    "confidence": 0.9999999999671888,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_NCBI_2697049_MESH_D012128",
+    "head_entity": {
+      "name": "SARS-CoV-2",
+      "type": "Species",
+      "standard_id": "NCBI:2697049"
+    },
+    "tail_entity": {
+      "name": "respiratory distress",
+      "type": "Disease",
+      "standard_id": "MESH:D012128"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 34,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_C000711487_MESH_D000086382",
+    "head_entity": {
+      "name": "casirivimab",
+      "type": "Chemical",
+      "standard_id": "MESH:C000711487"
+    },
+    "tail_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 40,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D006973_MESH_D017379",
+    "head_entity": {
+      "name": "High Blood Pressure",
+      "type": "Disease",
+      "standard_id": "MESH:D006973"
+    },
+    "tail_entity": {
+      "name": "left ventricular hypertrophy",
+      "type": "Disease",
+      "standard_id": "MESH:D017379"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 21,
+    "confidence": 0.9999999999972881,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D003924_MESH_D006333",
+    "head_entity": {
+      "name": "type 2 diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003924"
+    },
+    "tail_entity": {
+      "name": "heart failure",
+      "type": "Disease",
+      "standard_id": "MESH:D006333"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 20,
+    "confidence": 0.9999999999815438,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_NCBI_9606_MESH_D003866",
+    "head_entity": {
+      "name": "human",
+      "type": "Species",
+      "standard_id": "NCBI:9606"
+    },
+    "tail_entity": {
+      "name": "depression",
+      "type": "Disease",
+      "standard_id": "MESH:D003866"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 84,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_C517975_MESH_D018318",
+    "head_entity": {
+      "name": "Selumetinib",
+      "type": "Chemical",
+      "standard_id": "MESH:C517975"
+    },
+    "tail_entity": {
+      "name": "plexiform neurofibromas",
+      "type": "Disease",
+      "standard_id": "MESH:D018318"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 15,
+    "confidence": 0.9999999999829141,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D018817_MESH_D013313",
+    "head_entity": {
+      "name": "3,4-methylenedioxymethamphetamine",
+      "type": "Chemical",
+      "standard_id": "MESH:D018817"
+    },
+    "tail_entity": {
+      "name": "posttraumatic epilepsy",
+      "type": "Disease",
+      "standard_id": "MESH:D013313"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 18,
+    "confidence": 0.999999999966362,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D003924",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "type 2 diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003924"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 94,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D059808_MESH_D007249",
+    "head_entity": {
+      "name": "polyphenols",
+      "type": "Chemical",
+      "standard_id": "MESH:D059808"
+    },
+    "tail_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 26,
+    "confidence": 0.9999999999998457,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D006470",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "haemorrhage",
+      "type": "Disease",
+      "standard_id": "MESH:D006470"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 33,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D003920_MESH_D006333",
+    "head_entity": {
+      "name": "uncontrolled diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003920"
+    },
+    "tail_entity": {
+      "name": "heart failure",
+      "type": "Disease",
+      "standard_id": "MESH:D006333"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 30,
+    "confidence": 0.9999999999999999,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D003920_MESH_D050197",
+    "head_entity": {
+      "name": "uncontrolled diabetes",
+      "type": "Disease",
+      "standard_id": "MESH:D003920"
+    },
+    "tail_entity": {
+      "name": "atherosclerosis",
+      "type": "Disease",
+      "standard_id": "MESH:D050197"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 32,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_C000711967_MESH_D000086382",
+    "head_entity": {
+      "name": "sotrovimab",
+      "type": "Chemical",
+      "standard_id": "MESH:C000711967"
+    },
+    "tail_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 28,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D000077265_MESH_D015140",
+    "head_entity": {
+      "name": "donepezil",
+      "type": "Chemical",
+      "standard_id": "MESH:D000077265"
+    },
+    "tail_entity": {
+      "name": "vascular dementia",
+      "type": "Disease",
+      "standard_id": "MESH:D015140"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 37,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D000090862_MESH_D019636",
+    "head_entity": {
+      "name": "neuroinflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D000090862"
+    },
+    "tail_entity": {
+      "name": "neurodegeneration",
+      "type": "Disease",
+      "standard_id": "MESH:D019636"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 39,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_C092797_MESH_D010300",
+    "head_entity": {
+      "name": "Safinamide",
+      "type": "Chemical",
+      "standard_id": "MESH:C092797"
+    },
+    "tail_entity": {
+      "name": "Parkinson's disease",
+      "type": "Disease",
+      "standard_id": "MESH:D010300"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 26,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D000086382_MESH_D002493",
+    "head_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "tail_entity": {
+      "name": "Neurologic Complications",
+      "type": "Disease",
+      "standard_id": "MESH:D002493"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 16,
+    "confidence": 0.9999999858223351,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D014652_MESH_D050197",
+    "head_entity": {
+      "name": "endothelial dysfunction",
+      "type": "Disease",
+      "standard_id": "MESH:D014652"
+    },
+    "tail_entity": {
+      "name": "atherosclerosis",
+      "type": "Disease",
+      "standard_id": "MESH:D050197"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 21,
+    "confidence": 0.999999999972646,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D009203",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "myocardial infarction",
+      "type": "Disease",
+      "standard_id": "MESH:D009203"
+    },
+    "kg_relation_type": "Inhibit",
+    "ground_truth": "Beneficial",
+    "evidence_count": 37,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D000077464_MESH_D002303",
+    "head_entity": {
+      "name": "levosimendan",
+      "type": "Chemical",
+      "standard_id": "MESH:D000077464"
+    },
+    "tail_entity": {
+      "name": "Low urine output",
+      "type": "Disease",
+      "standard_id": "MESH:D002303"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 23,
+    "confidence": 0.9999999999999994,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D000077152_MESH_D001714",
+    "head_entity": {
+      "name": "olanzapine",
+      "type": "Chemical",
+      "standard_id": "MESH:D000077152"
+    },
+    "tail_entity": {
+      "name": "Bipolar Disorder",
+      "type": "Disease",
+      "standard_id": "MESH:D001714"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 27,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_NCBI_351_MESH_D003072",
+    "head_entity": {
+      "name": "amyloid beta (Abeta) 42",
+      "type": "Gene",
+      "standard_id": "NCBI:351"
+    },
+    "tail_entity": {
+      "name": "cognitive impairment",
+      "type": "Disease",
+      "standard_id": "MESH:D003072"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 24,
+    "confidence": 0.9999999999973193,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D051436_MESH_D002318",
+    "head_entity": {
+      "name": "chronic kidney disease",
+      "type": "Disease",
+      "standard_id": "MESH:D051436"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 23,
+    "confidence": 0.9999999999990813,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_C000656703_MESH_D000086382",
+    "head_entity": {
+      "name": "molnupiravir",
+      "type": "Chemical",
+      "standard_id": "MESH:C000656703"
+    },
+    "tail_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 98,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_NCBI_3553_MESH_D007249",
+    "head_entity": {
+      "name": "IL-1beta",
+      "type": "Gene",
+      "standard_id": "NCBI:3553"
+    },
+    "tail_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "kg_relation_type": "Stimulate",
+    "ground_truth": "Harmful",
+    "evidence_count": 44,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_C000726808",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "Generalized Anxiety Disorder",
+      "type": "Disease",
+      "standard_id": "MESH:C000726808"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 17,
+    "confidence": 0.9999999997933285,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D009765_MESH_D008659",
+    "head_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "tail_entity": {
+      "name": "metabolic disorders",
+      "type": "Disease",
+      "standard_id": "MESH:D008659"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 33,
+    "confidence": 0.9999999999999999,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D009765_MESH_D051436",
+    "head_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "tail_entity": {
+      "name": "chronic kidney disease",
+      "type": "Disease",
+      "standard_id": "MESH:D051436"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 27,
+    "confidence": 0.9999999999999861,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg__MESH_D050197",
+    "head_entity": {
+      "name": "atherothrombosis",
+      "type": "Disease",
+      "standard_id": ""
+    },
+    "tail_entity": {
+      "name": "atherosclerosis",
+      "type": "Disease",
+      "standard_id": "MESH:D050197"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 22,
+    "confidence": 0.9999999999839225,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D010121_MESH_D006473",
+    "head_entity": {
+      "name": "Oxytocin",
+      "type": "Chemical",
+      "standard_id": "MESH:D010121"
+    },
+    "tail_entity": {
+      "name": "postpartum hemorrhage",
+      "type": "Disease",
+      "standard_id": "MESH:D006473"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 25,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_C531550_MESH_D000077216",
+    "head_entity": {
+      "name": "olaparib",
+      "type": "Chemical",
+      "standard_id": "MESH:C531550"
+    },
+    "tail_entity": {
+      "name": "epithelial ovarian cancers",
+      "type": "Disease",
+      "standard_id": "MESH:D000077216"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 23,
+    "confidence": 0.9999999999999991,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_-_NCBI_9606",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "human",
+      "type": "Species",
+      "standard_id": "NCBI:9606"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 16,
+    "confidence": 0.9999999999483321,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D000086382_MESH_D008171",
+    "head_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "tail_entity": {
+      "name": "lung disease",
+      "type": "Disease",
+      "standard_id": "MESH:D008171"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 16,
+    "confidence": 0.999999985526967,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D009765_MESH_D006528",
+    "head_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "tail_entity": {
+      "name": "hepatocellular carcinoma",
+      "type": "Disease",
+      "standard_id": "MESH:D006528"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 23,
+    "confidence": 0.9999999999994871,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D008687_MESH_D016640",
+    "head_entity": {
+      "name": "metformin",
+      "type": "Chemical",
+      "standard_id": "MESH:D008687"
+    },
+    "tail_entity": {
+      "name": "Gestational Diabetes Mellitus",
+      "type": "Disease",
+      "standard_id": "MESH:D016640"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 19,
+    "confidence": 0.999999999999999,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_NCBI_55737_MESH_D010300",
+    "head_entity": {
+      "name": "VPS35",
+      "type": "Gene",
+      "standard_id": "NCBI:55737"
+    },
+    "tail_entity": {
+      "name": "Parkinson's disease",
+      "type": "Disease",
+      "standard_id": "MESH:D010300"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 21,
+    "confidence": 0.9999999999927681,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D006333_MESH_D006976",
+    "head_entity": {
+      "name": "heart failure",
+      "type": "Disease",
+      "standard_id": "MESH:D006333"
+    },
+    "tail_entity": {
+      "name": "pulmonary hypertension",
+      "type": "Disease",
+      "standard_id": "MESH:D006976"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 18,
+    "confidence": 0.9999999976843147,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D008055_MESH_D050197",
+    "head_entity": {
+      "name": "Lipid",
+      "type": "Chemical",
+      "standard_id": "MESH:D008055"
+    },
+    "tail_entity": {
+      "name": "atherosclerosis",
+      "type": "Disease",
+      "standard_id": "MESH:D050197"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 31,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D009765_MESH_D020521",
+    "head_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "tail_entity": {
+      "name": "stroke",
+      "type": "Disease",
+      "standard_id": "MESH:D020521"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 17,
+    "confidence": 0.9999999988520875,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D015431",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "weight loss",
+      "type": "Disease",
+      "standard_id": "MESH:D015431"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 16,
+    "confidence": 0.999999999999915,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D001058_MESH_D010300",
+    "head_entity": {
+      "name": "apomorphine",
+      "type": "Chemical",
+      "standard_id": "MESH:D001058"
+    },
+    "tail_entity": {
+      "name": "Parkinson's disease",
+      "type": "Disease",
+      "standard_id": "MESH:D010300"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 25,
+    "confidence": 0.9999999999999798,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D014807_MESH_D015212",
+    "head_entity": {
+      "name": "vitamin D",
+      "type": "Chemical",
+      "standard_id": "MESH:D014807"
+    },
+    "tail_entity": {
+      "name": "inflammatory bowel disease",
+      "type": "Disease",
+      "standard_id": "MESH:D015212"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 17,
+    "confidence": 0.9999999998392555,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_NCBI_3569_MESH_D007249",
+    "head_entity": {
+      "name": "interleukin-6",
+      "type": "Gene",
+      "standard_id": "NCBI:3569"
+    },
+    "tail_entity": {
+      "name": "gut inflammation",
+      "type": "Disease",
+      "standard_id": "MESH:D007249"
+    },
+    "kg_relation_type": "Stimulate",
+    "ground_truth": "Harmful",
+    "evidence_count": 99,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.8
+  },
+  {
+    "query_id": "kg_MESH_D006526_MESH_D006528",
+    "head_entity": {
+      "name": "HCV infection",
+      "type": "Disease",
+      "standard_id": "MESH:D006526"
+    },
+    "tail_entity": {
+      "name": "hepatocellular carcinoma",
+      "type": "Disease",
+      "standard_id": "MESH:D006528"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 25,
+    "confidence": 0.9999999999999998,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D009765_MESH_D000086382",
+    "head_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "tail_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 18,
+    "confidence": 0.9999999995238289,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_-_MESH_D003865",
+    "head_entity": {
+      "name": "antiplatelet medications",
+      "type": "Chemical",
+      "standard_id": "MESH:-"
+    },
+    "tail_entity": {
+      "name": "Major Depressive Disorder",
+      "type": "Disease",
+      "standard_id": "MESH:D003865"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 53,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg__MESH_D000086382",
+    "head_entity": {
+      "name": "atherothrombosis",
+      "type": "Disease",
+      "standard_id": ""
+    },
+    "tail_entity": {
+      "name": "COVID-19",
+      "type": "Disease",
+      "standard_id": "MESH:D000086382"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 87,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_N_A_MESH_D009765",
+    "head_entity": {
+      "name": "oropharyngeal colostrum",
+      "type": "Therapy",
+      "standard_id": "N/A"
+    },
+    "tail_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 17,
+    "confidence": 0.9999999999994419,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_C058254_MESH_D009765",
+    "head_entity": {
+      "name": "Sibutramine",
+      "type": "Chemical",
+      "standard_id": "MESH:C058254"
+    },
+    "tail_entity": {
+      "name": "obesity",
+      "type": "Disease",
+      "standard_id": "MESH:D009765"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 20,
+    "confidence": 0.9999999999999442,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  },
+  {
+    "query_id": "kg_MESH_D015208_MESH_D002318",
+    "head_entity": {
+      "name": "smoking",
+      "type": "Disease",
+      "standard_id": "MESH:D015208"
+    },
+    "tail_entity": {
+      "name": "Cardiovascular Disease",
+      "type": "Disease",
+      "standard_id": "MESH:D002318"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 28,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D005235_MESH_D005355",
+    "head_entity": {
+      "name": "non-alcoholic steatohepatitis",
+      "type": "Disease",
+      "standard_id": "MESH:D005235"
+    },
+    "tail_entity": {
+      "name": "cirrhosis",
+      "type": "Disease",
+      "standard_id": "MESH:D005355"
+    },
+    "kg_relation_type": "Cause",
+    "ground_truth": "Harmful",
+    "evidence_count": 25,
+    "confidence": 0.9999999999999719,
+    "label_method": "rule",
+    "label_confidence": 0.9
+  },
+  {
+    "query_id": "kg_MESH_D008063_MESH_D010523",
+    "head_entity": {
+      "name": "alpha lipoic acid",
+      "type": "Chemical",
+      "standard_id": "MESH:D008063"
+    },
+    "tail_entity": {
+      "name": "peripheral neurotoxicity",
+      "type": "Disease",
+      "standard_id": "MESH:D010523"
+    },
+    "kg_relation_type": "Treat",
+    "ground_truth": "Beneficial",
+    "evidence_count": 31,
+    "confidence": 1.0,
+    "label_method": "rule",
+    "label_confidence": 0.95
+  }
+]

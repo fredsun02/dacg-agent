@@ -1,0 +1,232 @@
+{
+  "subset": "clean_103 (Beneficial + NoEffect, gold==gt)",
+  "n_queries": 103,
+  "gt_distribution": {
+    "NoEffect": 44,
+    "Beneficial": 59
+  },
+  "ablation": {
+    "fixed_k_3": {
+      "accuracy": 46.6,
+      "avg_steps": 2.91,
+      "mean_regret": 2.07,
+      "median_regret": 2.0,
+      "drift_rate": 22.6,
+      "n": 103,
+      "acc_ben": 32.2,
+      "acc_noe": 65.9
+    },
+    "fixed_k_5": {
+      "accuracy": 51.5,
+      "avg_steps": 4.64,
+      "mean_regret": 3.29,
+      "median_regret": 4.0,
+      "drift_rate": 28.4,
+      "n": 103,
+      "acc_ben": 50.8,
+      "acc_noe": 52.3
+    },
+    "fixed_k_10": {
+      "accuracy": 54.4,
+      "avg_steps": 7.88,
+      "mean_regret": 6.4,
+      "median_regret": 7.0,
+      "drift_rate": 27.3,
+      "n": 103,
+      "acc_ben": 55.9,
+      "acc_noe": 52.3
+    },
+    "fixed_k_20": {
+      "accuracy": 52.4,
+      "avg_steps": 11.19,
+      "mean_regret": 9.71,
+      "median_regret": 9.0,
+      "drift_rate": 29.9,
+      "n": 103,
+      "acc_ben": 54.2,
+      "acc_noe": 50.0
+    },
+    "conf_only": {
+      "accuracy": 60.2,
+      "avg_steps": 3.74,
+      "mean_regret": 2.29,
+      "median_regret": 1.0,
+      "drift_rate": 17.3,
+      "n": 103,
+      "acc_ben": 52.5,
+      "acc_noe": 70.5
+    },
+    "kl_only": {
+      "accuracy": 47.6,
+      "avg_steps": 4.05,
+      "mean_regret": 2.91,
+      "median_regret": 3.0,
+      "drift_rate": 25.8,
+      "n": 103,
+      "acc_ben": 37.3,
+      "acc_noe": 61.4
+    },
+    "full": {
+      "accuracy": 47.6,
+      "avg_steps": 4.05,
+      "mean_regret": 2.91,
+      "median_regret": 3.0,
+      "drift_rate": 25.8,
+      "n": 103,
+      "acc_ben": 37.3,
+      "acc_noe": 61.4
+    },
+    "oracle": {
+      "accuracy": 74.8,
+      "avg_steps": 3.13,
+      "mean_regret": 0.0,
+      "median_regret": 0.0,
+      "drift_rate": 0.0,
+      "n": 103
+    }
+  },
+  "correctness_curve": {
+    "1": {
+      "accuracy": 50.5,
+      "n": 103,
+      "correct": 52
+    },
+    "2": {
+      "accuracy": 50.5,
+      "n": 101,
+      "correct": 51
+    },
+    "3": {
+      "accuracy": 45.8,
+      "n": 96,
+      "correct": 44
+    },
+    "4": {
+      "accuracy": 46.7,
+      "n": 90,
+      "correct": 42
+    },
+    "5": {
+      "accuracy": 50.0,
+      "n": 88,
+      "correct": 44
+    },
+    "6": {
+      "accuracy": 52.6,
+      "n": 78,
+      "correct": 41
+    },
+    "7": {
+      "accuracy": 59.4,
+      "n": 69,
+      "correct": 41
+    },
+    "8": {
+      "accuracy": 60.0,
+      "n": 65,
+      "correct": 39
+    },
+    "9": {
+      "accuracy": 59.4,
+      "n": 64,
+      "correct": 38
+    },
+    "10": {
+      "accuracy": 63.8,
+      "n": 58,
+      "correct": 37
+    },
+    "11": {
+      "accuracy": 63.0,
+      "n": 54,
+      "correct": 34
+    },
+    "12": {
+      "accuracy": 64.7,
+      "n": 51,
+      "correct": 33
+    },
+    "13": {
+      "accuracy": 66.0,
+      "n": 47,
+      "correct": 31
+    },
+    "14": {
+      "accuracy": 65.9,
+      "n": 44,
+      "correct": 29
+    },
+    "15": {
+      "accuracy": 62.5,
+      "n": 40,
+      "correct": 25
+    },
+    "16": {
+      "accuracy": 61.1,
+      "n": 36,
+      "correct": 22
+    },
+    "17": {
+      "accuracy": 54.8,
+      "n": 31,
+      "correct": 17
+    },
+    "18": {
+      "accuracy": 50.0,
+      "n": 20,
+      "correct": 10
+    },
+    "19": {
+      "accuracy": 63.6,
+      "n": 11,
+      "correct": 7
+    },
+    "20": {
+      "accuracy": 57.1,
+      "n": 7,
+      "correct": 4
+    }
+  },
+  "drift_analysis": {
+    "total_queries": 103,
+    "has_correct_step": 77,
+    "drifted": 23,
+    "time_to_correct": {
+      "mean": 1.99,
+      "median": 1
+    },
+    "by_class": {
+      "Beneficial": {
+        "total": 59,
+        "has_correct": 34,
+        "drifted": 2,
+        "drift_rate": 5.9
+      },
+      "NoEffect": {
+        "total": 44,
+        "has_correct": 43,
+        "drifted": 21,
+        "drift_rate": 48.8
+      }
+    }
+  },
+  "prm_analysis": {
+    "correct_peak_reward": {
+      "mean": 0.873,
+      "std": 1.81,
+      "n": 54
+    },
+    "wrong_peak_reward": {
+      "mean": -0.283,
+      "std": 1.926,
+      "n": 49
+    },
+    "prm_decline_prevents_drift": 0,
+    "prm_decline_total": 0,
+    "peak_at_correct_step": {
+      "count": 54,
+      "total": 77,
+      "rate": 70.1
+    }
+  }
+}

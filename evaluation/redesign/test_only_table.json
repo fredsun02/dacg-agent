@@ -1,0 +1,77 @@
+{
+  "split": "test_only_n140_balanced_70_70",
+  "table": {
+    "k=3": {
+      "acc": 64.3,
+      "macroF1": 63.2,
+      "F1_NoE": 56.9,
+      "NoE": 47.1,
+      "Ben": 81.4,
+      "steps": 2.9,
+      "acc_CI": [
+        56,
+        72
+      ]
+    },
+    "k=20": {
+      "acc": 61.4,
+      "macroF1": 59.6,
+      "F1_NoE": 50.9,
+      "NoE": 40.0,
+      "Ben": 82.9,
+      "steps": 11.4,
+      "acc_CI": [
+        53,
+        69
+      ]
+    },
+    "KL-only": {
+      "acc": 69.3,
+      "macroF1": 69.0,
+      "F1_NoE": 66.1,
+      "NoE": 60.0,
+      "Ben": 78.6,
+      "steps": 4.3,
+      "acc_CI": [
+        61,
+        76
+      ]
+    },
+    "Entropy@0.5": {
+      "acc": 68.6,
+      "macroF1": 68.4,
+      "F1_NoE": 66.2,
+      "NoE": 61.4,
+      "Ben": 75.7,
+      "steps": 3.5,
+      "acc_CI": [
+        61,
+        76
+      ]
+    },
+    "DACG (KL+PRM)": {
+      "acc": 69.3,
+      "macroF1": 69.1,
+      "F1_NoE": 66.7,
+      "NoE": 61.4,
+      "Ben": 77.1,
+      "steps": 3.7,
+      "acc_CI": [
+        61,
+        76
+      ]
+    },
+    "Oracle": {
+      "acc": 77.1,
+      "macroF1": 76.8,
+      "F1_NoE": 74.2,
+      "NoE": 65.7,
+      "Ben": 88.6,
+      "steps": 3.7,
+      "acc_CI": [
+        70,
+        84
+      ]
+    }
+  }
+}

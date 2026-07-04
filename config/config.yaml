@@ -1,0 +1,38 @@
+# KGSA Searching Agent Configuration
+
+pubmed:
+  base_url: "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+  batch_size: 5              # Papers per batch
+  max_results: 100           # Max search results
+  rate_limit: 0.35           # Seconds between requests (NCBI requires ~3/sec)
+
+extractor:
+  api_base: "https://www.packyapi.com/v1"
+  api_key: "${LLM_API_KEY}"  # set via environment; do not hardcode
+  model: "claude-sonnet-4-6"
+  max_retries: 3
+  timeout: 60
+  temperature: 0.3
+
+prm:
+  model_path: "/data/DRKG/KGSA/Stage4/Task8_data_selection/models/prm_mlp.pt"
+  min_steps: 3               # Minimum steps before PRM can trigger stop
+  decline_threshold: 0.3     # Stop if reward drops by this much from peak
+  convergence_threshold: 0.1 # Stop if reward converges (small changes)
+  max_steps: 20              # Maximum search steps
+
+agent:
+  batch_size: 2              # Papers per step (matches training)
+  confidence_threshold: 0.8  # Stop if confidence exceeds this
+  max_search_time: 300       # Max search time in seconds
+
+# Relation type mappings
+relations:
+  beneficial_types:
+    - "Treat"
+    - "Inhibit"
+  harmful_types:
+    - "Cause"
+    - "Stimulate"
+  neutral_types:
+    - "NoEffect"

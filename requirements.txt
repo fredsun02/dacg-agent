@@ -1,0 +1,6 @@
+numpy
+scipy
+torch
+requests
+pyyaml
+sentence-transformers

@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+.omc/
+.secrets/
+.env
+*.log
+config/*local*
+models/bge-reranker-base/
